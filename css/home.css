@@ -1,15 +1,15 @@
 header {
-    background-color: aquamarine;
+  background-color: aquamarine;
 }
 
 body {
-    background-color: black;
+  background-color: rgb(128, 143, 154);
 }
 
 main {
-    background-color: palegoldenrod;
+  background-color: palegoldenrod;
 }
 
 footer {
-    background-color: blue;
+  background-color: blue;
 }
