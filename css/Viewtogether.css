@@ -4,3 +4,49 @@ body {
   background-color: #121212;
   color: #fff;
 }
+.hero {
+  text-align: center;
+  padding: 50px 20px;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin: 10px 0;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #444;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.rooms {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.room,
+.new-room {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 200px;
+}
+
+.room img {
+  width: 100%;
+  border-radius: 10px;
+}
