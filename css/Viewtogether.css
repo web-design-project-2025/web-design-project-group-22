@@ -5,9 +5,11 @@ body {
   color: #fff;
 }
 .hero {
+  position: relative;
   text-align: center;
   padding: 50px 20px;
-  position: relative;
+  height: 500px; /* Adjust height as needed */
+  overflow: hidden;
 }
 
 .hero-bg {
@@ -18,6 +20,21 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Add a semi-transparent background for better readability */
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
 }
 
 .hero h1 {
