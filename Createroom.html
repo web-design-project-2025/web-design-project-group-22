@@ -6,5 +6,48 @@
     <title>Create room</title>
     <link rel="stylesheet" href="css/Createroom.css" />
   </head>
-  <body></body>
+  <body>
+    <header></header>
+    <main>
+      <section class="create-room">
+        <img
+          src="img/Createroombg.png"
+          alt="Background"
+          class="background-image"
+        />
+        <div class="container">
+          <form>
+            <label for="room-type">Room type</label>
+            <select id="room-type">
+              <option>General</option>
+              <option>Private</option>
+            </select>
+
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Password/Password"
+            />
+
+            <label for="room-facilities">Room facilities</label>
+            <select id="room-facilities">
+              <option>Regular (limited to 15 people)</option>
+              <option>Large (up to 50 people)</option>
+            </select>
+
+            <div class="buttons">
+              <button type="button" class="cancel">Cancel</button>
+              <button type="button" class="create">Making a room</button>
+            </div>
+          </form>
+        </div>
+        <div class="select-title">
+          <h2>Select a title</h2>
+          <button class="add-title">+</button>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
