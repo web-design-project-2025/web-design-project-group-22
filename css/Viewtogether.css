@@ -43,7 +43,7 @@ body {
 
 .hero button {
   padding: 10px 20px;
-  background-color: #444;
+  background-color: #1f2b19;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -73,9 +73,18 @@ body {
   flex: 1;
 }
 
+.room button {
+  padding: 10px 20px;
+  background-color: #1f2b19;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
 .room-poster {
   width: 150px;
-  height: auto;
+  height: 220px;
   border-radius: 10px;
   margin-left: 20px;
 }
@@ -86,13 +95,18 @@ body {
   border-radius: 10px;
   text-align: center;
   width: 300px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .new-room button {
   font-size: 24px;
   padding: 10px 20px;
-  background-color: #444;
+  background-color: #1f2b19;
   border: none;
   color: #fff;
   cursor: pointer;
