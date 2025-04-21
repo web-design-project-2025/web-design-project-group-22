@@ -51,6 +51,7 @@ body {
   border-radius: 5px;
   border: none;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .buttons {
