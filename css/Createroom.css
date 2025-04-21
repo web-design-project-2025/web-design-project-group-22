@@ -52,6 +52,13 @@ body {
   border: none;
   width: 100%;
   box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container input:hover,
+.container select:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .buttons {
@@ -107,4 +114,29 @@ body {
   color: #fff;
   border: none;
   cursor: pointer;
+}
+
+.buttons .cancel,
+.buttons .create,
+.select-movie .add-movie {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.buttons .cancel:hover,
+.buttons .create:hover,
+.select-movie .add-movie:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.buttons .cancel:hover {
+  background-color: #555;
+}
+
+.buttons .create:hover {
+  background-color: #2a3b25;
+}
+
+.select-movie .add-movie:hover {
+  background-color: #2a3b25;
 }
