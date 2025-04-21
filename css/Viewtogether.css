@@ -43,7 +43,7 @@ body {
 
 .hero button {
   padding: 10px 20px;
-  background-color: #1f2b19;
+  background-color: #9aa067;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -75,7 +75,7 @@ body {
 
 .room button {
   padding: 10px 20px;
-  background-color: #1f2b19;
+  background-color: #9aa067;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -87,6 +87,10 @@ body {
   height: 220px;
   border-radius: 10px;
   margin-left: 20px;
+  transition: transform 0.3s ease;
+}
+.room-poster:hover {
+  transform: scale(1.01);
 }
 
 .new-room {
@@ -106,9 +110,18 @@ body {
 .new-room button {
   font-size: 24px;
   padding: 10px 20px;
-  background-color: #1f2b19;
+  background-color: #9aa067;
   border: none;
   color: #fff;
   cursor: pointer;
   border-radius: 5px;
+}
+
+button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #72774b;
 }
