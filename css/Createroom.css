@@ -29,7 +29,7 @@ body {
   padding: 80px;
   border-radius: 20px;
   width: 1000px;
-  height: 200px;
+  height: 250px;
   max-width: 95%;
   margin: 0 auto;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.6);
@@ -78,10 +78,11 @@ body {
 
 .select-movie {
   background: rgba(0, 0, 0, 0.8);
-  padding: 40px;
+  padding: 80px;
   border-radius: 15px;
   text-align: center;
   width: 400px;
+  height: 250px;
   margin: 40px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
