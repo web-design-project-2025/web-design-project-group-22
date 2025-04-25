@@ -1,15 +1,54 @@
-header {
-  background-color: aquamarine;
+.navbar {
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
 }
 
 body {
-  background-color: rgb(128, 143, 154);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
 }
 
-main {
-  background-color: palegoldenrod;
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
+#coming-soon {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.cover {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.cover:hover {
+  transform: scale(1.05);
+}
+
+
+.cover img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
 footer{
   background-color: #2f2f2f;
   color: #ccc;
@@ -17,6 +56,7 @@ footer{
   padding: 40px 20px;
   height: 300px;
   overflow: hidden;
+
 }
 
 #logo-section figure {
