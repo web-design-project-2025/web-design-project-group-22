@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #fff;
+}
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 50px 20px;
+  height: 500px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin: 10px 0;
+}
+
+.hero button {
+  padding: 10px 20px;
+  background-color: #9aa067;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.rooms {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+}
+
+.room {
+  display: flex;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.room-content {
+  flex: 1;
+}
+
+.room button {
+  padding: 10px 20px;
+  background-color: #9aa067;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.room-poster {
+  width: 150px;
+  height: 220px;
+  border-radius: 10px;
+  margin-left: 20px;
+  transition: transform 0.3s ease;
+}
+.room-poster:hover {
+  transform: scale(1.01);
+}
+
+.new-room {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.new-room button {
+  font-size: 24px;
+  padding: 10px 20px;
+  background-color: #9aa067;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  background-color: #72774b;
+}

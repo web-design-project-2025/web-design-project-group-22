@@ -42,9 +42,75 @@ h1 {
   transform: scale(1.05);
 }
 
+
 .cover img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   display: block;
 }
+footer{
+  background-color: #2f2f2f;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  height: 300px;
+  overflow: hidden;
+
+}
+
+#logo-section figure {
+  margin: 0;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo-section figure img {
+  max-width: 100%;
+  max-height: 150px;
+  height: auto;
+}
+
+#logo-section p {
+  max-width: 500px;
+  margin: 15px auto;
+  font-size: 14px;
+  color: #999;
+}
+
+#footer-links {
+  margin: 20px 0;
+}
+
+#footer-links .downpart {
+ list-style: none;
+ padding: 0;
+}
+
+#footer-links .downpart li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#footer-links .downpart li{
+  display: inline;
+  margin: 0 10px;
+}
+
+#footer-social {
+  margin-top: 20px;
+}
+
+#footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#footer-social a:hover {
+  color: #cba792
+}
+
