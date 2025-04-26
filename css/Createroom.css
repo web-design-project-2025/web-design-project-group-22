@@ -116,6 +116,17 @@ body {
   cursor: pointer;
 }
 
+.buttons .cancel {
+  background-color: #444;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
 .buttons .cancel,
 .buttons .create,
 .select-movie .add-movie {
