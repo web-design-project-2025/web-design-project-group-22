@@ -84,4 +84,75 @@ function renderFavoritesContent(favoritesCovers) {
   }
 }
 
+const celebritySlider = document.getElementById("celebrity-slider");
+const leftArrow = document.querySelector(".left-arrow");
+const rightArrow = document.querySelector(".right-arrow");
+
+let celebrities = [];
+let currentIndex = 0;
+
+async function loadData() {
+  const response = await fetch("data/celeberities.json");
+  const data = await response.json();
+  celebrities = data.people; // Extract celebrity data from the JSON
+
+  renderCelebrities(currentIndex);
+}
+
+// Render the celebrity images into the slider
+function renderCelebrities(startIndex) {
+  celebritySlider.innerHTML = "";
+  for (let i = 0; i < 6; i++) {
+    const celebIndex = (startIndex + i) % celebrities.length; // wrap around
+    const celebrity = celebrities[celebIndex];
+
+    const imgElement = document.createElement("img");
+    imgElement.src = celebrity.profile_image;
+    imgElement.alt = celebrity.name;
+    celebritySlider.appendChild(imgElement);
+  }
+}
+
+// Handle left arrow click
+leftArrow.addEventListener("click", () => {
+  if (currentIndex > 0) {
+    currentIndex -= 1; // Move back by 6 images
+  } else {
+    currentIndex = celebrities.length - 1; // Wrap to the last group
+  }
+  renderCelebrities(currentIndex);
+});
+
+// Handle right arrow click
+rightArrow.addEventListener("click", () => {
+  if (currentIndex < celebrities.length - 1) {
+    currentIndex += 1; // Move forward by 6 images
+  } else {
+    currentIndex = 0; // Wrap back to the first group
+  }
+  renderCelebrities(currentIndex);
+});
+
 loadData();
+
+function updateSliderPosition() {
+  celebritySlider.classList.add("sliding");
+
+  const slideWidth = celebritySlider.querySelector("img").offsetWidth + 10;
+  const totalWidth = slideWidth * celebrities.length;
+
+  currentIndex = (currentIndex + celebrities.length) % celebrities.length;
+
+  let offset = currentIndex * slideWidth;
+  if (offset + slideWidth * visibleCount > totalWidth) {
+    offset = 0;
+    currentIndex = 0;
+  }
+
+  celebritySlider.style.transform = `translateX(-${offset}px)`;
+
+  // Remove the fade class after the transition completes (500ms)
+  setTimeout(() => {
+    celebritySlider.classList.remove("sliding");
+  }, 500);
+}

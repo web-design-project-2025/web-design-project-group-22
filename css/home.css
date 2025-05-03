@@ -233,3 +233,54 @@ footer {
 #footer-social a:hover {
   color: #cba792;
 }
+
+/* popular celeberities */
+
+#celeberity-title {
+  text-align: center;
+  margin-top: 3rem;
+}
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+}
+
+.slider img {
+  width: 16.666%;
+  height: 200px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.slider-arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  color: #ffb43b;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}

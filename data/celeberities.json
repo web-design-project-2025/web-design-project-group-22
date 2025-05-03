@@ -1,0 +1,379 @@
+{
+  "people": [
+    {
+      "id": 1,
+      "name": "Emma Watson",
+      "cast": true,
+      "details": {
+        "known_for": "Actress, Activist",
+        "notable_work": ["Harry Potter", "Beauty and the Beast"]
+      },
+      "profile_image": "images/celeberities/image-1.png",
+      "awards": {
+        "golden_globe": { "won": 1, "nominated": 4 },
+        "oscar": { "won": 0, "nominated": 2 },
+        "total_won": 12,
+        "total_nominated": 20
+      },
+      "career": {
+        "active_since": 2001,
+        "height_cm": 165,
+        "age": 34,
+        "writer_credits": 1,
+        "producer_credits": 5,
+        "series_acted": 2,
+        "movies_acted": 10
+      }
+    },
+    {
+      "id": 2,
+      "name": "Chris Evans",
+      "cast": true,
+      "details": {
+        "known_for": "Actor",
+        "notable_work": ["Captain America", "Avengers"]
+      },
+      "profile_image": "images/celeberities/image-2.png",
+      "awards": {
+        "golden_globe": { "won": 2, "nominated": 5 },
+        "oscar": { "won": 1, "nominated": 3 },
+        "total_won": 15,
+        "total_nominated": 25
+      },
+      "career": {
+        "active_since": 2000,
+        "height_cm": 183,
+        "age": 43,
+        "writer_credits": 0,
+        "producer_credits": 4,
+        "series_acted": 3,
+        "movies_acted": 12
+      }
+    },
+    {
+      "id": 3,
+      "name": "Pedro Pascal",
+      "cast": true,
+      "details": {
+        "known_for": "Actor",
+        "notable_work": ["The Mandalorian", "The Last of Us"]
+      },
+      "profile_image": "images/celeberities/image-3.png",
+      "awards": {
+        "golden_globe": { "won": 1, "nominated": 3 },
+        "oscar": { "won": 0, "nominated": 2 },
+        "total_won": 10,
+        "total_nominated": 18
+      },
+      "career": {
+        "active_since": 1999,
+        "height_cm": 180,
+        "age": 49,
+        "writer_credits": 0,
+        "producer_credits": 3,
+        "series_acted": 4,
+        "movies_acted": 8
+      }
+    },
+    {
+      "id": 4,
+      "name": "Scarlett Johansson",
+      "cast": true,
+      "details": {
+        "known_for": "Actress",
+        "notable_work": ["Avengers", "Marriage Story"]
+      },
+      "profile_image": "images/celeberities/image-4.png",
+      "awards": {
+        "golden_globe": { "won": 2, "nominated": 6 },
+        "oscar": { "won": 1, "nominated": 3 },
+        "total_won": 18,
+        "total_nominated": 28
+      },
+      "career": {
+        "active_since": 1994,
+        "height_cm": 160,
+        "age": 39,
+        "writer_credits": 1,
+        "producer_credits": 6,
+        "series_acted": 3,
+        "movies_acted": 15
+      }
+    },
+    {
+      "id": 5,
+      "name": "Robert Downey Jr.",
+      "cast": true,
+      "details": {
+        "known_for": "Actor",
+        "notable_work": ["Iron Man", "Sherlock Holmes"]
+      },
+      "profile_image": "images/celeberities/image-5.png",
+      "awards": {
+        "golden_globe": { "won": 3, "nominated": 5 },
+        "oscar": { "won": 0, "nominated": 2 },
+        "total_won": 20,
+        "total_nominated": 30
+      },
+      "career": {
+        "active_since": 1983,
+        "height_cm": 174,
+        "age": 59,
+        "writer_credits": 0,
+        "producer_credits": 7,
+        "series_acted": 2,
+        "movies_acted": 18
+      }
+    },
+    {
+      "id": 6,
+      "name": "Zendaya",
+      "cast": true,
+      "details": {
+        "known_for": "Actress, Singer",
+        "notable_work": ["Euphoria", "Spider-Man"]
+      },
+      "profile_image": "images/celeberities/image-6.png",
+      "awards": {
+        "golden_globe": { "won": 2, "nominated": 4 },
+        "oscar": { "won": 1, "nominated": 3 },
+        "total_won": 14,
+        "total_nominated": 22
+      },
+      "career": {
+        "active_since": 2010,
+        "height_cm": 178,
+        "age": 28,
+        "writer_credits": 1,
+        "producer_credits": 4,
+        "series_acted": 3,
+        "movies_acted": 9
+      }
+    },
+    {
+      "id": 7,
+      "name": "Tom Holland",
+      "cast": true,
+      "details": {
+        "known_for": "Actor",
+        "notable_work": ["Spider-Man", "Uncharted"]
+      },
+      "profile_image": "images/celeberities/image-7.png",
+      "awards": {
+        "golden_globe": { "won": 1, "nominated": 3 },
+        "oscar": { "won": 0, "nominated": 1 },
+        "total_won": 9,
+        "total_nominated": 15
+      },
+      "career": {
+        "active_since": 2012,
+        "height_cm": 173,
+        "age": 28,
+        "writer_credits": 0,
+        "producer_credits": 3,
+        "series_acted": 2,
+        "movies_acted": 7
+      }
+    },
+    {
+      "id": 8,
+      "name": "Ryan Reynolds",
+      "cast": true,
+      "details": {
+        "known_for": "Actor",
+        "notable_work": ["Deadpool", "Free Guy"]
+      },
+      "profile_image": "images/celeberities/image-8.png",
+      "awards": {
+        "golden_globe": { "won": 2, "nominated": 4 },
+        "oscar": { "won": 0, "nominated": 2 },
+        "total_won": 13,
+        "total_nominated": 21
+      },
+      "career": {
+        "active_since": 1991,
+        "height_cm": 188,
+        "age": 48,
+        "writer_credits": 1,
+        "producer_credits": 6,
+        "series_acted": 3,
+        "movies_acted": 14
+      }
+    },
+    {
+      "id": 9,
+      "name": "Oprah Winfrey",
+      "cast": false,
+      "details": {
+        "known_for": "TV Host, Philanthropist",
+        "notable_work": ["The Oprah Winfrey Show"]
+      },
+      "profile_image": "images/celeberities/image-9.png",
+      "awards": {
+        "golden_globe": { "won": 2, "nominated": 5 },
+        "oscar": { "won": 0, "nominated": 1 },
+        "total_won": 25,
+        "total_nominated": 40
+      },
+      "career": {
+        "active_since": 1984,
+        "height_cm": 169,
+        "age": 70,
+        "writer_credits": 2,
+        "producer_credits": 15,
+        "series_acted": 0,
+        "movies_acted": 0
+      }
+    },
+    {
+      "id": 10,
+      "name": "Elon Musk",
+      "cast": false,
+      "details": {
+        "known_for": "Entrepreneur, CEO of Tesla & SpaceX",
+        "notable_work": ["Tesla", "SpaceX"]
+      },
+      "profile_image": "images/celeberities/image-10.png",
+      "awards": {
+        "golden_globe": { "won": 0, "nominated": 1 },
+        "oscar": { "won": 0, "nominated": 0 },
+        "total_won": 8,
+        "total_nominated": 12
+      },
+      "career": {
+        "active_since": 1999,
+        "height_cm": 188,
+        "age": 53,
+        "writer_credits": 1,
+        "producer_credits": 4,
+        "series_acted": 0,
+        "movies_acted": 0
+      }
+    },
+    {
+      "id": 11,
+      "name": "Taylor Swift",
+      "cast": false,
+      "details": {
+        "known_for": "Singer-Songwriter",
+        "notable_work": ["1989", "Midnights"]
+      },
+      "profile_image": "images/celeberities/image-11.png",
+      "awards": {
+        "golden_globe": { "won": 2, "nominated": 6 },
+        "oscar": { "won": 0, "nominated": 1 },
+        "total_won": 35,
+        "total_nominated": 50
+      },
+      "career": {
+        "active_since": 2006,
+        "height_cm": 180,
+        "age": 35,
+        "writer_credits": 3,
+        "producer_credits": 10,
+        "series_acted": 0,
+        "movies_acted": 0
+      }
+    },
+    {
+      "id": 12,
+      "name": "Beyoncé",
+      "cast": false,
+      "details": {
+        "known_for": "Singer, Actress",
+        "notable_work": ["Lemonade", "The Lion King"]
+      },
+      "profile_image": "images/celeberities/image-12.png",
+      "awards": {
+        "golden_globe": { "won": 1, "nominated": 4 },
+        "oscar": { "won": 0, "nominated": 1 },
+        "total_won": 40,
+        "total_nominated": 60
+      },
+      "career": {
+        "active_since": 1997,
+        "height_cm": 169,
+        "age": 43,
+        "writer_credits": 4,
+        "producer_credits": 12,
+        "series_acted": 0,
+        "movies_acted": 5
+      }
+    },
+    {
+      "id": 13,
+      "name": "Cristiano Ronaldo",
+      "cast": false,
+      "details": {
+        "known_for": "Footballer",
+        "notable_work": ["Real Madrid", "Manchester United"]
+      },
+      "profile_image": "images/celeberities/image-13.png",
+      "awards": {
+        "golden_globe": { "won": 0, "nominated": 0 },
+        "oscar": { "won": 0, "nominated": 0 },
+        "total_won": 100,
+        "total_nominated": 150
+      },
+      "career": {
+        "active_since": 2002,
+        "height_cm": 187,
+        "age": 40,
+        "writer_credits": 0,
+        "producer_credits": 5,
+        "series_acted": 0,
+        "movies_acted": 0
+      }
+    },
+    {
+      "id": 14,
+      "name": "Serena Williams",
+      "cast": false,
+      "details": {
+        "known_for": "Tennis Player",
+        "notable_work": ["Grand Slam Titles", "Olympic Gold"]
+      },
+      "profile_image": "images/celeberities/image-14.png",
+      "awards": {
+        "golden_globe": { "won": 0, "nominated": 0 },
+        "oscar": { "won": 0, "nominated": 0 },
+        "total_won": 80,
+        "total_nominated": 120
+      },
+      "career": {
+        "active_since": 1995,
+        "height_cm": 175,
+        "age": 43,
+        "writer_credits": 1,
+        "producer_credits": 6,
+        "series_acted": 0,
+        "movies_acted": 0
+      }
+    },
+    {
+      "id": 15,
+      "name": "Kim Kardashian",
+      "cast": false,
+      "details": {
+        "known_for": "Reality TV Star, Businesswoman",
+        "notable_work": ["Keeping Up with the Kardashians"]
+      },
+      "profile_image": "images/celeberities/image-15.png",
+      "awards": {
+        "golden_globe": { "won": 0, "nominated": 1 },
+        "oscar": { "won": 0, "nominated": 0 },
+        "total_won": 10,
+        "total_nominated": 15
+      },
+      "career": {
+        "active_since": 2007,
+        "height_cm": 159,
+        "age": 44,
+        "writer_credits": 0,
+        "producer_credits": 8,
+        "series_acted": 0,
+        "movies_acted": 0
+      }
+    }
+  ]
+}
