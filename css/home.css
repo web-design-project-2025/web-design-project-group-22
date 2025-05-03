@@ -77,6 +77,128 @@ h1 {
   list-style: none;
 }
 
+#users-favorites {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+/* Section Styling */
+#categories {
+  padding: 40px;
+  background-color: #111;
+  color: white;
+  text-align: center;
+}
+
+/* Title */
+#categories h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+/* Grid Layout */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 200px;
+  gap: 20px;
+  justify-items: center;
+}
+
+/* Card Base */
+.category-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.7s ease-out forwards;
+}
+
+/* Staggered Animation Delays */
+.category-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.category-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.category-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.category-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.category-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.category-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.category-card:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.category-card:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.category-card:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+/* Animation Keyframes */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Effect */
+.category-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.6);
+}
+
+/* Image Styles */
+.category-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: transform 0.4s ease;
+}
+
+.category-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Caption */
+.category-card figcaption {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Big Card */
+.category-card.large {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
 .cover {
   background-color: #fff;
   padding: 10px;
@@ -89,21 +211,19 @@ h1 {
   transform: scale(1.05);
 }
 
-
 .cover img {
   width: 100%;
   height: auto;
   border-radius: 8px;
   display: block;
 }
-footer{
+footer {
   background-color: #2f2f2f;
   color: #ccc;
   text-align: center;
   padding: 40px 20px;
   height: 300px;
   overflow: hidden;
-
 }
 
 #logo-section figure {
@@ -131,8 +251,8 @@ footer{
 }
 
 #footer-links .downpart {
- list-style: none;
- padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 #footer-links .downpart li a {
@@ -141,7 +261,7 @@ footer{
   font-size: 14px;
 }
 
-#footer-links .downpart li{
+#footer-links .downpart li {
   display: inline;
   margin: 0 10px;
 }
@@ -158,6 +278,5 @@ footer{
 }
 
 #footer-social a:hover {
-  color: #cba792
+  color: #cba792;
 }
-
