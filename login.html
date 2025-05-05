@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <link rel="stylesheet" href="css/login.css" />
+    <script src="js/login.js"></script>
   </head>
   <body>
     <header></header>
@@ -22,9 +23,14 @@
               <p>or</p>
               <span></span>
             </div>
-            <form>
-              <input type="email" placeholder="Email" required />
-              <input type="password" placeholder="Password" required />
+            <form id="login-form" onsubmit="handleLogin(event)">
+              <input type="email" id="email" placeholder="Email" required />
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
               <div class="options">
                 <div class="remember-me">
                   <input type="checkbox" id="remember-me" />
