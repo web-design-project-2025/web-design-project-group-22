@@ -92,6 +92,7 @@ form .options .remember-me {
   display: flex;
   align-items: center;
   gap: 5px;
+  white-space: nowrap;
 }
 
 form .options a {
@@ -109,7 +110,7 @@ form .options label {
 }
 
 form .options input[type="checkbox"] {
-  margin: 0;
+  margin: 10px;
 }
 
 .login-btn {
