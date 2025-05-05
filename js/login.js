@@ -5,7 +5,7 @@ function handleLogin(event) {
 
   if (email) {
     const username = email.split("@")[0];
-    window.location.href = `homepage.html?username=${encodeURIComponent(
+    window.location.href = `index.html?username=${encodeURIComponent(
       username
     )}`;
   } else {
