@@ -365,3 +365,77 @@ footer {
   color: #f4f4f4;
   margin-left: 20rem;
 }
+
+.navbar .link-item{
+  display: flex;
+  align-items: center;
+}
+
+.navbar .text-link {
+  display: block;
+}
+
+.navbar .icon-link{
+  display: none;
+}
+
+.navbar .icon-container{
+  display: flex;
+  gap: 15px;
+  margin-right: 10px;
+}
+
+.navbar .nav-icon {
+  font-size: 24px;
+  color: #D4D2A4;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    background-color: #333;
+    border-top: 1px solid #555;
+    padding: 10px;
+  }
+
+  .navbar .logo {
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .navbar .links {
+    position: absolute;
+    right: 10px;
+    margin-left: 0;
+    gap: 10px;
+  }
+
+  .navbar .text-link {
+    display: none;
+  }
+
+  .navbar .icon-link {
+    display: block;
+  }
+
+  .navbar .search-box {
+    display: none;
+  }
+
+  .navbar .icon-container {
+    position: absolute;
+    left: 10px;
+    gap: 10px;
+  }
+
+  .navbar .nav-icon {
+    font-size: 20px;
+  }
+}
+  
