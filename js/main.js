@@ -1,12 +1,10 @@
-
-
 // loading data from JSON (API)
 let covers = [];
 // coming soon
 const comingSoonElement = document.getElementById("coming-soon");
 const usersFavoritesElement = document.getElementById("users-favorites");
 
-async function loadData() {
+async function loadCoversData() {
   const coverResponse = await fetch("data/covers.json");
   const coverJSON = await coverResponse.json();
 
@@ -53,6 +51,8 @@ function renderFavoritesContent(favoritesCovers) {
   }
 }
 
+loadCoversData(); // Loading covers
+
 const celebritySlider = document.getElementById("celebrity-slider");
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
@@ -60,7 +60,7 @@ const rightArrow = document.querySelector(".right-arrow");
 let celebrities = [];
 let currentIndex = 0;
 
-async function loadData() {
+async function loadCelebritiesData() {
   const response = await fetch("data/celeberities.json");
   const data = await response.json();
   celebrities = data.people; // Extract celebrity data from the JSON
@@ -102,4 +102,4 @@ rightArrow.addEventListener("click", () => {
   renderCelebrities(currentIndex);
 });
 
-loadData();
+loadCelebritiesData(); // Loading celebrities pictures
