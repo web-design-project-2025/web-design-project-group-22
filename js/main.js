@@ -116,7 +116,7 @@ function renderCelebrities(startIndex) {
 // Handle left arrow click
 leftArrow.addEventListener("click", () => {
   if (currentIndex > 0) {
-    currentIndex -= 1; // Move back by 6 images
+    currentIndex -= 1; // Move back by 1 images
   } else {
     currentIndex = celebrities.length - 1; // Wrap to the last group
   }
@@ -126,7 +126,7 @@ leftArrow.addEventListener("click", () => {
 // Handle right arrow click
 rightArrow.addEventListener("click", () => {
   if (currentIndex < celebrities.length - 1) {
-    currentIndex += 1; // Move forward by 6 images
+    currentIndex += 1; // Move forward by 1 images
   } else {
     currentIndex = 0; // Wrap back to the first group
   }
@@ -134,25 +134,3 @@ rightArrow.addEventListener("click", () => {
 });
 
 loadData();
-
-function updateSliderPosition() {
-  celebritySlider.classList.add("sliding");
-
-  const slideWidth = celebritySlider.querySelector("img").offsetWidth + 10;
-  const totalWidth = slideWidth * celebrities.length;
-
-  currentIndex = (currentIndex + celebrities.length) % celebrities.length;
-
-  let offset = currentIndex * slideWidth;
-  if (offset + slideWidth * visibleCount > totalWidth) {
-    offset = 0;
-    currentIndex = 0;
-  }
-
-  celebritySlider.style.transform = `translateX(-${offset}px)`;
-
-  // Remove the fade class after the transition completes (500ms)
-  setTimeout(() => {
-    celebritySlider.classList.remove("sliding");
-  }, 500);
-}
