@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <script src="js/login.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="container">
+        <div class="login-section">
+          <div class="login-box">
+            <h1>Welcome back, David</h1>
+            <p>Welcome back! Please enter your details.</p>
+            <button class="google-login">
+              <img src="img/Google.png" alt="Google Icon" /> Log in with Google
+            </button>
+            <div class="divider">
+              <span></span>
+              <p>or</p>
+              <span></span>
+            </div>
+            <form id="login-form" onsubmit="handleLogin(event)">
+              <input type="email" id="email" placeholder="Email" required />
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <div class="options">
+                <div class="remember-me">
+                  <input type="checkbox" id="remember-me" />
+                  <label for="remember-me">Remember me for 30 days</label>
+                </div>
+                <a href="#">Forgot password</a>
+              </div>
+              <button type="submit" class="login-btn">Log in</button>
+            </form>
+            <p class="signup">
+              Don't have an account? <a href="#">Sign up for free</a>
+            </p>
+          </div>
+        </div>
+        <div class="image-section">
+          <img src="img/1image.png" alt="Promotional Image" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
