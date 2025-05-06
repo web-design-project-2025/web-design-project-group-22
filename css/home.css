@@ -49,6 +49,7 @@ h1 {
   border-radius: 8px;
   display: block;
 }
+
 footer{
   background-color: #2f2f2f;
   color: #ccc;
@@ -113,4 +114,5 @@ footer{
 #footer-social a:hover {
   color: #cba792
 }
+
 

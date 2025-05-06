@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/slider.css" />
     <script src="js/main.js" defer></script>
+    <script src="js/slider.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  </head>
   <body>
 
     <main>
-      <section id="coming-soon"></section>
+      <section class="slider-section">
+        <div id="slider-content">
+        <img id="slider-image" src="" alt="Cover Image">
+        <div class="slider-info">
+          <h3 id="slider-title">Title</h3>
+          <p id="slider-score">⭐ Score</p>
+          <p id="slider-duration">Duration</p>
+          <p id="slider-description">description</p>
+          <button class="play-btn">Play</button>
+        </div>
+       </div>
+      </section>
+      <section id="slider">
+      </section>
     </main>
    
 
@@ -33,10 +49,9 @@
 
       <div id="footer-social">
         <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
       </div>
     </footer>
-
   </body>
 </html>
