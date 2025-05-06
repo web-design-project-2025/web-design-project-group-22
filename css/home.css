@@ -331,3 +331,37 @@ footer {
 .right-arrow {
   right: 10px;
 }
+
+/* AI part */
+
+#AI {
+  display: flex;
+  flex-direction: row;
+  background-color: #0c0806;
+}
+#AIPic {
+  width: 70%;
+  height: 100%;
+  margin-left: 5rem;
+  margin-bottom: 0%;
+}
+
+#P1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-left: 18rem;
+  margin-top: 10rem;
+  color: #f4f4f4;
+}
+
+#P2 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+  margin-top: -0.7rem;
+  color: #f4f4f4;
+  margin-left: 20rem;
+}
