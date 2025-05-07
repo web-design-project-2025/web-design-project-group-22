@@ -270,7 +270,7 @@ h1 {
 #AI {
   display: flex;
   flex-direction: row;
-  background-color: #0c0806;
+  background-color: #141414;
 }
 #AIPic {
   width: 70%;
@@ -301,7 +301,7 @@ h1 {
 
 /* Footer Section*/
 footer {
-  background-color: #2f2f2f;
+  background-color: #000000;
   color: #ccc;
   text-align: center;
   padding: 40px 20px;
