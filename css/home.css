@@ -112,6 +112,23 @@ h1 {
   list-style: none;
 }
 
+.section-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+#coming-soon h2,
+#users-favorites h2 {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 /* Categories Section */
 #categories {
   padding: 40px;
