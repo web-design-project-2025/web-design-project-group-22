@@ -32,6 +32,11 @@ h1 {
 
 /* Navbar */
 .navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   background-color: #000000;
   color: white;
   padding: 10px;
@@ -42,7 +47,7 @@ h1 {
 }
 
 .navbar .logo {
-  height: 50px;
+  height: 30px;
 }
 
 .navbar .links {
