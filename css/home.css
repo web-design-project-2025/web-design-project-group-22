@@ -109,7 +109,7 @@ h1 {
 /* Categories Section */
 #categories {
   padding: 40px;
-  background-color: #111;
+  background-color: #141414;
   color: white;
   text-align: center;
 }
@@ -216,6 +216,7 @@ h1 {
 
 /* Popular Celebrities Section */
 #celeberity-title {
+  color: #fff;
   text-align: center;
   margin-top: 3rem;
 }
