@@ -121,6 +121,7 @@ h1 {
 
 #coming-soon h2,
 #users-favorites h2 {
+  margin-top: 40px;
   font-size: 1.5rem;
   color: #e0e0d0;
   display: flex;
@@ -240,6 +241,8 @@ h1 {
 /* Popular Celebrities Section */
 #celeberity-title {
   color: #fff;
+  font-size: 2rem;
+  margin-bottom: 30px;
   text-align: center;
   margin-top: 3rem;
 }
