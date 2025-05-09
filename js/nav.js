@@ -72,7 +72,7 @@ const mobileLogo = document.createElement("a");
 mobileLogo.href = "index.html";
 mobileLogo.classList.add("mobile-logo-container");
 const mobileLogoImg = document.createElement("img");
-mobileLogoImg.src = "logo.svg";
+mobileLogoImg.src = "mobile-nav-logo.png";
 mobileLogoImg.classList.add("mobile-logo");
 mobileLogo.appendChild(mobileLogoImg);
 mobileNav.appendChild(mobileLogo);
