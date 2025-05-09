@@ -291,14 +291,40 @@ h2 {
   width: 80%;
   margin-left: 10rem;
   margin-bottom: 3rem;
+  justify-content: center;
+  position: relative;
 }
 
 .slider img {
-  width: 16.666%;
-  height: 200px;
+  width: 12%;
+  height: 150px;
   margin-right: 10px;
   object-fit: cover;
   border-radius: 50%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.5;
+}
+
+.slider img:nth-child(3),
+.slider img:nth-child(4) {
+  width: 16%;
+  height: 200px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slider img:nth-child(2),
+.slider img:nth-child(5) {
+  width: 14%;
+  height: 180px;
+  opacity: 0.8;
+}
+
+.slider img:nth-child(1),
+.slider img:nth-child(6) {
+  width: 12%;
+  height: 150px;
+  opacity: 0.5;
 }
 
 .slider-arrow {
