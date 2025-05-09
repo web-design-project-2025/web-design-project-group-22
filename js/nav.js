@@ -1,106 +1,100 @@
 
-const isLoggedIn = localStorage.getItem("isLoggedIn") === "true"|| false; 
-const currentPage = window.location.pathname.split("/").pop();
-const nav = document.createElement("nav");
-nav.classList.add("navbar");
+const isLoggedIn = localStorage.getItem("isLoggedIn") === "true" || false;
+const desktopNav = document.createElement("nav");
+desktopNav.classList.add("navbar", "desktop-nav");
+const desktopLogo = document.createElement("img");
+desktopLogo.src = "logo.svg";
+desktopLogo.classList.add("logo");
+desktopNav.appendChild(desktopLogo);
 
-const logo = document.createElement("img");
-logo.src = "logo.svg";
-logo.classList.add("logo");
+const linksContainer = document.createElement("ul");
+linksContainer.classList.add("links");
 
-const linksContainer = document.createElement("div");
-linksContainer.classList.add("links-item");
+
+const homeLink = document.createElement("li");
+const homeLinkA = document.createElement("a");
+homeLinkA.href = "index.html";
+homeLinkA.textContent = "Home";
+homeLink.appendChild(homeLinkA);
+linksContainer.appendChild(homeLink);
+
+const categoriesLink = document.createElement("li");
+const categoriesLinkA = document.createElement("a");
+categoriesLinkA.href = "categories.html";
+categoriesLinkA.textContent = "Categories";
+categoriesLink.appendChild(categoriesLinkA);
+linksContainer.appendChild(categoriesLink);
+
+const viewTogetherLink = document.createElement("li");
+const viewTogetherLinkA = document.createElement("a");
+viewTogetherLinkA.href = "viewTogether.html";
+viewTogetherLinkA.textContent = "View Together";
+viewTogetherLink.appendChild(viewTogetherLinkA);
+linksContainer.appendChild(viewTogetherLink);
+
+desktopNav.appendChild(linksContainer);
 
 const searchContainer = document.createElement("div");
 searchContainer.classList.add("search-box");
 const searchInput = document.createElement("input");
 searchInput.type = "text";
 searchInput.placeholder = "search";
-
 searchContainer.appendChild(searchInput);
+desktopNav.appendChild(searchContainer);
 
-const iconContainer = document.createElement("div");
-iconContainer.classList.add("icon-container");
+if (isLoggedIn === false) {
+  const signInBtn = document.createElement("button");
+  signInBtn.classList.add("sign-in");
+  signInBtn.textContent = "Sign In";
+  signInBtn.addEventListener("click", () => {
+    window.location.href = "login.html";
+  });
+  desktopNav.appendChild(signInBtn);
+}
 
+const mobileNav = document.createElement("div");
+mobileNav.classList.add("mobile-nav");
+
+//  Categories
+const categoryMobileLink = document.createElement("a");
+categoryMobileLink.href = "categories.html";
+categoryMobileLink.innerHTML = '<i class="fas fa-th-large nav-icon"></i><span>Categories</span>';
+mobileNav.appendChild(categoryMobileLink);
+
+// View Together
+const viewTogetherMobileLink = document.createElement("a");
+viewTogetherMobileLink.href = "viewTogether.html";
+viewTogetherMobileLink.innerHTML = '<i class="fas fa-users nav-icon"></i><span>View Together</span>';
+mobileNav.appendChild(viewTogetherMobileLink);
+
+//Logo mobile version
+const mobileLogo = document.createElement("a");
+mobileLogo.href = "index.html";
+mobileLogo.classList.add("mobile-logo-container");
+const mobileLogoImg = document.createElement("img");
+mobileLogoImg.src = "logo.svg";
+mobileLogoImg.classList.add("mobile-logo");
+mobileLogo.appendChild(mobileLogoImg);
+mobileNav.appendChild(mobileLogo);
+
+//AI icon
+const aiMobileLink = document.createElement("a");
+aiMobileLink.href = "#";
+aiMobileLink.innerHTML = '<i class="fas fa-robot nav-icon"></i><span>AI</span>';
+mobileNav.appendChild(aiMobileLink);
+
+// Login
 if (isLoggedIn) {
-  const profileIcon = document.createElement("i");
-  profileIcon.classList.add("fas","fa-user","nav-icon");
-  const profileLink = document.createElement("a");
-  profileLink.appendChild(profileIcon);
-  iconContainer.appendChild(profileLink);
-
-  const aiIcon = document.createElement("i");
-  aiIcon.classList.add("fas","fa-robot","nav-icon");
-  const aiLink = document.createElement("a");
-  aiLink.appendChild(aiIcon);
-  iconContainer.appendChild(aiLink);
-}else{
-  const signInIcon = document.createElement("i");
-  signInIcon.classList.add("fas", "fas-sign-in-alt", "nav-icon");
-  const signInLink = document.createElement("a");
-  signInLink.href ="login.html";
-  signInLink.appendChild(signInIcon);
-  iconContainer.appendChild(signInLink);
+  const profileMobileLink = document.createElement("a");
+  profileMobileLink.href = "#";
+  profileMobileLink.innerHTML = '<i class="fas fa-user nav-icon"></i><span>Profile</span>';
+  mobileNav.appendChild(profileMobileLink);
+} else {
+  const loginMobileLink = document.createElement("a");
+  loginMobileLink.href = "login.html";
+  loginMobileLink.innerHTML = '<i class="fas fa-sign-in-alt nav-icon"></i><span>Login</span>';
+  mobileNav.appendChild(loginMobileLink);
 }
 
-const navItems = [
-  {
-    name: "Home",
-    href: "index.html",
-    showOn: ["categories.html", "view-together.html"],
-  },
-  {
-    name: "categories",
-    href: "categories.html",
-    showOn: ["index.html", "view-together.html"],
-  },
-  {
-    name: "View Togeether",
-    href: "ViewTogether.html",
-    showOn: ["index.html", "categories.html"],
-  },
-  {
-    name: "View Togeether",
-    href: "login.html",
-    showOn: ["index.html"],
-  },
-];
-
-for (let { name, href, showOn } of navItems) {
-  if (showOn === "all" || showOn.includes(currentPage)) {
-    const linksContainer = document.createElement("div");
-    linksContainer.classList.add("link-item");
-
-    const textLink = document.createElement("a");
-    textLink.textContent = name;
-    textLink.href = href;
-    textLink.classList.add("text-link");
-    linksContainer.appendChild(textLink);
-
-    const iconLink = document.createElement("a");
-    iconLink.href =href;
-    iconLink.classList.add("icon-link");
-    const iconElement = document.createElement("i");
-    if (name === "Home") {
-      iconElement.classList.add("fas", "fa-home", "nav-icon");
-    }else if (name === "categories") {
-      iconElement.classList.add("fas", "fa-list", "nav-icon");
-    } else if (href === "ViewTogether.html") {
-      iconElement.classList.add("fas", "fa-users", "nav-icon");
-    } else if (href === "login.html") {
-      iconElement.classList.add("fas", "fa-sign-in-alt", "nav-icon");
-    }
-    iconLink.appendChild(iconElement);
-    linksContainer.appendChild(iconLink);
-
-    linksContainer.appendChild(linksContainer);
-  }
-}
-
-nav.appendChild(iconContainer);
-nav.appendChild(logo);
-nav.appendChild(linksContainer);
-nav.appendChild(searchContainer);
-
-
-document.body.prepend(nav);
+document.body.prepend(desktopNav);
+document.body.appendChild(mobileNav);
