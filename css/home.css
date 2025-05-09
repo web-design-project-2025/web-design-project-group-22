@@ -402,6 +402,10 @@ footer {
   padding: 40px 20px;
   height: 300px;
   overflow: hidden;
+  width: 100vw;
+  margin-left: -20px;
+  box-sizing: border-box;
+  position: relative;
 }
 
 #logo-section figure {
