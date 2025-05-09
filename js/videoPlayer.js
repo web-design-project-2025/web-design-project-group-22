@@ -2,8 +2,47 @@
 because there is no public linke to share my chat I will put the conversation pdf However i share the link here
 link: https://claude.ai/share/69066603-53ee-4f4a-9eeb-916e13c14703 */
 
+// loading data from JSON (API)
+let people = [];
 let users = [];
+
+// get the  comments && casts Element by id
 const commentsElement = document.getElementById("comments");
+const castsElement = document.getElementById("casts");
+
+async function loadPeopleData() {
+  const peopleResponse = await fetch("data/celeberities.json");
+  const peopleJSON = await peopleResponse.json();
+
+  // using filter to collect casts from celeberities.json
+  const castsPicElement = peopleJSON.people.filter((people) => people.cast);
+  renderProfilePicContent(castsPicElement);
+}
+
+function createProfilePicElement(people) {
+  const PicElement = document.createElement("figure");
+  PicElement.classList.add("profile-pic");
+
+  const imageElement = document.createElement("img");
+  imageElement.src = people.profile_image;
+  imageElement.alt = people.name;
+  PicElement.appendChild(imageElement);
+
+  return PicElement;
+}
+// render pictures
+function renderProfilePicContent(castsPicElement) {
+  castsElement.innerHTML = "";
+
+  // limited the Pictures to the first 6 pictures in json file
+  const limitedProfilePic = castsPicElement.slice(0, 6);
+
+  for (let people of limitedProfilePic) {
+    const picElement = createProfilePicElement(people);
+    castsElement.appendChild(picElement);
+  }
+}
+loadPeopleData();
 
 async function loadCommentsData() {
   const userResponse = await fetch("data/users.json");
