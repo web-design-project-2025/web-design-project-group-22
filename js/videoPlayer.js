@@ -71,12 +71,17 @@ function renderComments(users) {
       userNameDiv.textContent = user.username;
       applyUserNameDivStyles(userNameDiv);
 
+      const readMoreLink = document.createElement("div");
+      readMoreLink.textContent = "Read More";
+      applyReadMoreStyles(readMoreLink);
+
       const singleCommentDiv = document.createElement("div");
       singleCommentDiv.textContent = commentText;
       applySingleCommentStyles(singleCommentDiv);
 
       contentContainerDiv.appendChild(userNameDiv);
       contentContainerDiv.appendChild(singleCommentDiv);
+      contentContainerDiv.appendChild(readMoreLink);
 
       commentDiv.appendChild(profilePicture);
       commentDiv.appendChild(contentContainerDiv);
@@ -87,31 +92,46 @@ function renderComments(users) {
 }
 
 function applyCommentDivStyles(commentDiv) {
+  commentDiv.style.width = "78%";
+  commentDiv.style.borderRadius = "1rem";
   commentDiv.style.display = "flex";
   commentDiv.style.alignItems = "flex-start";
-  commentDiv.style.padding = "12px";
-  commentDiv.style.marginBottom = "16px";
+  commentDiv.style.padding = "0.75rem";
+  commentDiv.style.marginBottom = "0.5rem";
+  commentDiv.style.marginLeft = "10rem";
   commentDiv.style.borderBottom = "1px solid #e0e0e0";
+  commentDiv.style.backgroundColor = "white";
 }
 
 function applyProfilePictureStyles(profilePicture) {
-  profilePicture.style.width = "50px";
-  profilePicture.style.height = "50px";
+  profilePicture.style.width = "2rem";
+  profilePicture.style.height = "2rem";
   profilePicture.style.borderRadius = "50%";
-  profilePicture.style.marginRight = "10px";
+  profilePicture.style.marginRight = "0.25rem";
+  profilePicture.style.marginBottom = "2rem";
 }
 
 function applyContenetContainerDivStyles(contentContainerDiv) {
   contentContainerDiv.style.flex = "1";
+  contentContainerDiv.style.alignItems = "center";
+  contentContainerDiv.style.marginLeft = "0.75rem";
 }
 
 function applyUserNameDivStyles(userNameDiv) {
   userNameDiv.style.fontWeight = "bold";
-  userNameDiv.style.marginBottom = "4px";
+  userNameDiv.style.marginBottom = "0.5rem";
+  userNameDiv.style.marginTop = "0.2rem";
 }
 
 function applySingleCommentStyles(singleCommentDiv) {
-  singleCommentDiv.style.marginBottom = "6px";
+  singleCommentDiv.style.marginBottom = "0.5rem";
+}
+
+function applyReadMoreStyles(readMoreLink) {
+  readMoreLink.style.color = "#999";
+  readMoreLink.style.fontSize = "14px";
+  readMoreLink.style.cursor = "pointer";
+  readMoreLink.style.textAlign = "right";
 }
 
 loadCommentsData();
