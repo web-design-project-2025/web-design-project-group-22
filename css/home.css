@@ -217,6 +217,7 @@ h1 {
   border-radius: 8px;
   display: block;
 }
+
 footer {
   background-color: #2f2f2f;
   color: #ccc;
@@ -328,6 +329,9 @@ footer {
   left: 10px;
 }
 
+
+
+
 .right-arrow {
   right: 10px;
 }
@@ -365,3 +369,4 @@ footer {
   color: #f4f4f4;
   margin-left: 20rem;
 }
+
