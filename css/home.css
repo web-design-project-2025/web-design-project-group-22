@@ -292,6 +292,7 @@ h1 {
   border-radius: 8px;
   display: block;
 }
+
 footer {
   background-color: #2f2f2f;
   color: #ccc;
@@ -403,6 +404,9 @@ footer {
   left: 10px;
 }
 
+
+
+
 .right-arrow {
   right: 10px;
 }
@@ -441,30 +445,6 @@ footer {
   margin-left: 20rem;
 }
 
-.navbar .link-item{
-  display: flex;
-  align-items: center;
-}
-
-.navbar .text-link {
-  display: block;
-}
-
-.navbar .icon-link{
-  display: none;
-}
-
-.navbar .icon-container{
-  display: flex;
-  gap: 15px;
-  margin-right: 10px;
-}
-
-.navbar .nav-icon {
-  font-size: 24px;
-  color: #D4D2A4;
-}
-
 @media (max-width: 768px) {
   .navbar {
       flex-direction: column;
@@ -496,3 +476,4 @@ footer {
       padding: 20px;
   }
 }
+
