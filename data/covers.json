@@ -12,7 +12,8 @@
       "imdbScore": 6.6,
       "genre": ["Drama", "Action", "Sci-Fi"],
       "year": 2005,
-      "duration": "1h 53m"
+      "duration": "1h 53m",
+      "comingSoon": true
     },
     {
       "id": "002",
@@ -26,7 +27,8 @@
       "imdbScore": 9.5,
       "genre": ["Thriller", "Sci-Fi", "Drama"],
       "year": 1990,
-      "duration": "2h 17m"
+      "duration": "2h 17m",
+      "comingSoon": true
     },
     {
       "id": "003",
@@ -40,7 +42,8 @@
       "imdbScore": 6.6,
       "genre": ["Drama", "Sci-Fi", "Action"],
       "year": 1999,
-      "duration": "1h 17m"
+      "duration": "1h 17m",
+      "favorite": true
     },
     {
       "id": "004",
@@ -68,7 +71,8 @@
       "imdbScore": 9.0,
       "genre": ["Sci-Fi", "Drama", "Thriller"],
       "year": 1996,
-      "duration": "2h 19m"
+      "duration": "2h 19m",
+      "favorite": true
     },
     {
       "id": "006",
@@ -82,7 +86,8 @@
       "imdbScore": 7.6,
       "genre": ["Action", "Sci-Fi", "Drama"],
       "year": 2000,
-      "duration": "2h 27m"
+      "duration": "2h 27m",
+      "favorite": true
     },
     {
       "id": "007",
@@ -208,7 +213,8 @@
       "imdbScore": 6.9,
       "genre": ["Action", "Thriller", "Drama"],
       "year": 1993,
-      "duration": "1h 47m"
+      "duration": "1h 47m",
+      "comingSoon": true
     },
     {
       "id": "016",
@@ -572,7 +578,8 @@
       "imdbScore": 8.7,
       "genre": ["Family", "Comedy", "Fantasy"],
       "year": 2019,
-      "duration": "2h 56m"
+      "duration": "2h 56m",
+      "favorite": true
     },
     {
       "id": "042",
@@ -684,7 +691,8 @@
       "imdbScore": 8.3,
       "genre": ["Family", "Fantasy", "Adventure"],
       "year": 2009,
-      "duration": "1h 54m"
+      "duration": "1h 54m",
+      "comingSoon": true
     },
     {
       "id": "050",
@@ -698,7 +706,8 @@
       "imdbScore": 6.4,
       "genre": ["Adventure", "Comedy", "Fantasy"],
       "year": 2012,
-      "duration": "2h 38m"
+      "duration": "2h 38m",
+      "favorite": true
     },
     {
       "id": "051",
@@ -712,7 +721,8 @@
       "imdbScore": 8.9,
       "genre": ["Family", "Fantasy", "Comedy"],
       "year": 2020,
-      "duration": "1h 20m"
+      "duration": "1h 20m",
+      "comingSoon": true
     },
     {
       "id": "052",
@@ -726,7 +736,8 @@
       "imdbScore": 6.7,
       "genre": ["Fantasy", "Family", "Comedy"],
       "year": 1997,
-      "duration": "1h 26m"
+      "duration": "1h 26m",
+      "favorite": true
     },
     {
       "id": "053",
@@ -740,7 +751,8 @@
       "imdbScore": 6.2,
       "genre": ["Family", "Fantasy", "Adventure"],
       "year": 2022,
-      "duration": "2h 29m"
+      "duration": "2h 29m",
+      "favorite": true
     },
     {
       "id": "054",
@@ -754,7 +766,8 @@
       "imdbScore": 9.3,
       "genre": ["Adventure", "Comedy", "Family"],
       "year": 2021,
-      "duration": "2h 51m"
+      "duration": "2h 51m",
+      "comingSoon": true
     },
     {
       "id": "055",
