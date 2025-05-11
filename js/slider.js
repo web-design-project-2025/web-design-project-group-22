@@ -13,7 +13,7 @@ const sliderDuration = document.getElementById("slider-duration");
 const sliderScore = document.getElementById("slider-score");
 const sliderElement = document.getElementById("slider");
 
-let currentIndex= 0;
+let currentIndexSlider= 0;
 
 async function loadData() {
     const apiKey = "7c4ccf3d2a72adb09ff852ddc4aa8a76";
@@ -36,7 +36,7 @@ async function loadData() {
 }
 
 function updateSlider() {
-    const item = sliderCovers[currentIndex];
+    const item = sliderCovers[currentIndexSlider];
     const imageUrl = `https://image.tmdb.org/t/p/original${item.backdrop_path}`;
 
     sliderImage.classList.remove("show");
@@ -54,7 +54,7 @@ function updateSlider() {
     sliderScore.textContent = `⭐ ${item.vote_average?.toFixed(1) || "N/A"}`;
     document.getElementById("slider-description").textContent = item.overview|| "No description";
     
-    currentIndex = (currentIndex + 1) % sliderCovers.length;
+    currentIndexSlider = (currentIndexSlider + 1) % sliderCovers.length;
   }
   
 
