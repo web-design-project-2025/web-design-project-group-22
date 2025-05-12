@@ -1,9 +1,8 @@
 
+
 #movie-details {
-  padding: 20px;
-  text-align: right;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 10px;
+  text-align: left;
   display: flex;
   gap: 20px;
 }
@@ -13,25 +12,68 @@
   margin-bottom: 20px;
 }
 
-.cover-image {
-  width: 300px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+#cover-image {
+  width: 100vw;
+  max-height: 500px;
+  object-fit: cover; 
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: fadeIn 1s ease-out;
+}
+
+.icon-button {
+  background: linear-gradient(45deg, #ffd700, #ffaa00);
+  color: #1a1a2e;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+.icon-button .star {
+  background: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .details {
-  flex: 1;
+ position: absolute;
+ bottom: 20%;
+ padding: 16px 20px; 
+ background: rgba(0, 0, 0, 0.5);
+ backdrop-filter: blur(5px);
+ border-top: 1px solid rgba(255, 255, 255, 0.2);
+ color: white;
 }
 
 .details p {
-  margin: 10px 0;
+  margin: 0px 0;
   font-size: 1.1em;
+  align-items: start;
+  color: white;
 }
 
 body {
   background-color: black;
   color: blue;
 }
+
 #casts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));

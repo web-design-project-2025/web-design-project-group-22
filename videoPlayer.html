@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/videoPlayer.css" />
 
     <script src="js/videoPlayer.js" defer></script>
@@ -12,9 +13,16 @@
     <section id="movie-details">
       <img id="cover-image" class="cover-image" src="" alt="" />
       <section class="details">
-        <p>Description:<span id="description"></span></p>
-        <p>Genres:<span id="genres"></span></p>
-        <p>Duration:<span id="duration"></span></p>
+        <div id="description"></div>
+        <div id="genres"></div>
+        <div id="duration"></div>
+
+        <div class="icon-bar">
+        <button class="icon-button" ><i class="fas fa-star"></i></button>
+        <button class="icon-button" ><i class="fas fa-heart"></i></button>
+        <button class="icon-button" ><i class="fas fa-share"></i></button>
+        <button class="icon-button play-button"><i class="fas fa-play"></i></button>
+      </div>
       </section>
     </section>
     
