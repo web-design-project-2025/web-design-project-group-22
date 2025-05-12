@@ -24,21 +24,40 @@
 }
 
 .icon-button {
-  background: linear-gradient(45deg, #ffd700, #ffaa00);
-  color: #1a1a2e;
-  border: none;
+  background-color: none;
+  color: #ffffff;
   border-radius: 50%;
   width: 50px;
   height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-.icon-button .star {
   background: none;
+  display: flexbox;
+}
+
+.star {
+  color: rgb(255, 213, 0);
+  padding-left: 2px;
+}
+
+.share{
+  position: absolute;
+  top: -15%;
+  left: 10%;
+}
+
+.heart {
+  position: absolute;
+  color: red;
+  font-size: 1.5rem;
+  top: -15%;
+}
+
+.play-button {
+  position: absolute;
+  bottom: 30px;
+  right: 10%;
+  background: #ffffff;
+  color: #000000;
 }
 
 @keyframes fadeIn {
