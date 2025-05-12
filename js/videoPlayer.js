@@ -1,3 +1,29 @@
+
+const urlParams = new URLSearchParams(window.location.search);
+const movieId = urlParams.get("movie_id");
+
+const coverImageElement = document.getElementById("cover-image");
+const descriptionElement = document.getElementById("description");
+const genresElement = document.getElementById("genres");
+const durationElement = document.getElementById("duration");
+
+// Load data from covers.json
+async function loadContentDetails() {
+  const response = await fetch("data/covers.json");
+  const data = await response.json();
+  const cover = data.covers.find((cover) => cover.id === movieId);
+
+  if (cover) {
+    coverImageElement.src = cover.coverImage || "images/placeholder.jpg";
+    coverImageElement.alt = cover.title || "Unknown";
+    descriptionElement.textContent = cover.description || "No description available.";
+    genresElement.textContent = cover.genre?.join(", ") || "Unknown";
+    durationElement.textContent = cover.duration || "Unknown";
+  }
+}
+
+loadContentDetails();
+
 /* I could not find the bug related to file path issue and missing add style to comment Dive, so i get help from AI
 because there is no public linke to share my chat I will put the conversation pdf However i share the link here
 link: https://claude.ai/share/69066603-53ee-4f4a-9eeb-916e13c14703 */
