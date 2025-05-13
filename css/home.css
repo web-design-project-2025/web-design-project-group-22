@@ -277,9 +277,9 @@ h2 {
   flex-direction: column;
   justify-content: flex-end;
   cursor: pointer;
-  opacity: 0; /* Initial state for animation */
-  transform: translateY(30px); /* Initial state for animation */
-  animation: fadeUp 0.7s ease-out forwards; /* Fade-up animation */
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.7s ease-out forwards;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
