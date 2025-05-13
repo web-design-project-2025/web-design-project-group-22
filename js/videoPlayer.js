@@ -17,6 +17,7 @@ const coverImageElement = document.getElementById("cover-image");
 const descriptionElement = document.getElementById("description");
 const genresElement = document.getElementById("genres");
 const durationElement = document.getElementById("duration");
+const ratingElement = document.querySelector(".icon-button.star .rating");
 
 async function loadContentDetails() {
   const response = await fetch(
@@ -30,7 +31,8 @@ async function loadContentDetails() {
   descriptionElement.textContent = data.overview || "No description available.";
   genresElement.textContent = data.genres?.map((g) => g.name).join(", ") || "Unknown";
   durationElement.textContent = data.runtime ? `${Math.floor(data.runtime / 60)}h ${data.runtime % 60}m` : "Unknown";
-
+  ratingElement.textContent = data.vote_average ? data.vote_average.toFixed(1) : "N/A";
+  
 }
 
 loadContentDetails();

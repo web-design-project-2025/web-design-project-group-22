@@ -31,30 +31,36 @@
   height: 50px;
   cursor: pointer;
   background: none;
-  display: flexbox;
 }
 
+.rating{
+  position: fixed;
+  left: 20px;
+  color: white;
+  font-size: 1.1rem;
+}
 .star {
   color: rgb(255, 213, 0);
-  padding-left: 2px;
+  padding-left: 30px;
 }
 
 .share{
-  position: absolute;
-  top: -15%;
-  left: 10%;
+  position: fixed;
+  top: 12%;
+  right: 5%;
 }
 
 .heart {
-  position: absolute;
+  position: fixed;
   color: red;
   font-size: 1.5rem;
-  top: -15%;
+  top: 10%;
+  right: 9%;
 }
 
 .play-button {
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
   right: 10%;
   background: #ffffff;
   color: #000000;
@@ -75,19 +81,32 @@
  position: absolute;
  bottom: 20%;
  padding: 16px 20px; 
+ width: 95vw;
  background: rgba(0, 0, 0, 0.5);
  backdrop-filter: blur(5px);
  border-top: 1px solid rgba(255, 255, 255, 0.2);
- color: white;
 }
 
-.details p {
-  margin: 0px 0;
-  font-size: 1.1em;
+#description{
+  top: 15%;
+  font-size: 1.1rem;
+  align-items: start;
+  color: white;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+#genres{
+  position: absolute;
+  top: 15%;
+  font-size: 1.1rem;
   align-items: start;
   color: white;
 }
-
+#duration{
+  color: white;
+  font-size: 1.3rem; 
+}
 body {
   background-color: black;
   color: blue;
