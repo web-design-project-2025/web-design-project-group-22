@@ -83,10 +83,40 @@ h2 {
   padding: 5px 20px;
   font-size: 14px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar .sign-in::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0)
+  );
+  transform: skewX(-45deg);
+  transition: left 0.3s ease;
 }
 
 .navbar .sign-in:hover {
-  background-color: #555;
+  background: linear-gradient(to right, #8a8f6e, #3a3934);
+  transform: scale(1.1);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.navbar .sign-in:hover::before {
+  left: 100%;
+}
+
+.navbar .sign-in:active {
+  transform: scale(0.95);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Mobile Navbar */
