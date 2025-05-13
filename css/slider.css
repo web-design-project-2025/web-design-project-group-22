@@ -1,67 +1,64 @@
-
 /* slider part */
 .slider-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-left: 15%;
-    padding-bottom: 30px;
-    width: 70%;
-    background-color: #f9f9f9;
-    font-family: 'Helvetice Neue', sans-serif;
-    }
-    
-     #slider-content {
-      position: relative;
-      outline: 3.5px solid #8D8658;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-      display: inline-block;
-    }
-    
-    #slider-image {
-      max-width: 100%;
-      width: auto;
-      right: 40px;
-    }
-    
-    #slider-image {
-      opacity: 0;
-      transition: opacity 0.8s ease-in-out;
-    }
-    #slider-image.show {
-      opacity: 1;
-    }
-    
-    .slider-info {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 16px 20px; 
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(5px);
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-      color: white;
-    }
-    
-    
-    #slider-title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    
-    #slider-duration {
-      font-size: 0.9rem;
-      color: #ccc;
-      margin-bottom: 10px;
-    }
-    
-    .play-btn {
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-left: 15%;
+  padding-bottom: 30px;
+  width: 70%;
+  font-family: "Helvetice Neue", sans-serif;
+}
+
+#slider-content {
+  position: relative;
+  outline: 3.5px solid #8d8658;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+#slider-image {
+  max-width: 100%;
+  width: auto;
+  right: 40px;
+}
+
+#slider-image {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+#slider-image.show {
+  opacity: 1;
+}
+
+.slider-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+#slider-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#slider-duration {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.play-btn {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
