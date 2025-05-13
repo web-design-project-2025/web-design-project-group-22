@@ -1,3 +1,42 @@
+
+/*i wanted to use the api so i ask gpt to know how should i do it however Garrit in feedback told us how 
+but we need a little more explanaition for that 
+https://chatgpt.com/share/68220dab-abf0-8004-8408-e8fe21d11a0d*/ 
+
+const apiKey = "7c4ccf3d2a72adb09ff852ddc4aa8a76";
+const token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YzRjY2YzZDJhNzJhZGIwOWZmODUyZGRjNGFhOGE3NiIsIm5iZiI6MTc0NDcyMzUxOS4yMzEsInN1YiI6IjY3ZmU1ZTNmYzFlMGE3MDhjYmFkNjRiZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.B5lfXnQkC-jXEtPpjbpJLNo5FRm5YzpST9-rJnID008";
+const imageBaseUrl = "https://image.tmdb.org/t/p/w1280";
+
+
+const urlParams = new URLSearchParams(window.location.search);
+const movieId = urlParams.get("movie_id");
+const contentType = urlParams.get("type") || "movie";
+
+
+const coverImageElement = document.getElementById("cover-image");
+const descriptionElement = document.getElementById("description");
+const genresElement = document.getElementById("genres");
+const durationElement = document.getElementById("duration");
+const ratingElement = document.querySelector(".icon-button.star .rating");
+
+async function loadContentDetails() {
+  const response = await fetch(
+    `https://api.themoviedb.org/3/${contentType}/${movieId}?api_key=${apiKey}&language=en-US`,
+    { headers: { Authorization: `Bearer ${token}` } }
+  );
+  const data = await response.json();
+
+  coverImageElement.src = data.backdrop_path ? `${imageBaseUrl}${data.backdrop_path}` : "images/placeholder.jpg";
+  coverImageElement.alt = data.title || data.name || "Unknown";
+  descriptionElement.textContent = data.overview || "No description available.";
+  genresElement.textContent = data.genres?.map((g) => g.name).join(", ") || "Unknown";
+  durationElement.textContent = data.runtime ? `${Math.floor(data.runtime / 60)}h ${data.runtime % 60}m` : "Unknown";
+  ratingElement.textContent = data.vote_average ? data.vote_average.toFixed(1) : "N/A";
+  
+}
+
+loadContentDetails();
+
 /* I could not find the bug related to file path issue and missing add style to comment Dive, so i get help from AI
 because there is no public linke to share my chat I will put the conversation pdf However i share the link here
 link: https://claude.ai/share/69066603-53ee-4f4a-9eeb-916e13c14703 */

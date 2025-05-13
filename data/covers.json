@@ -1,7 +1,7 @@
 {
   "covers": [
     {
-      "id": "001",
+      "id": "27205",
       "type": "movie",
       "title": "Inception",
       "coverImage": "images/inception.jpg",
@@ -16,10 +16,10 @@
       "comingSoon": true
     },
     {
-      "id": "002",
+      "id": "157336",
       "type": "movie",
       "title": "Interstellar",
-      "coverImage": "images/interstellar.jpg",
+      "coverImage": "images/interstaller.jpg",
       "description": "Interstellar is a Drama movie that captivates audiences worldwide.",
       "likes": 4054,
       "saves": 2275,
@@ -31,7 +31,7 @@
       "comingSoon": true
     },
     {
-      "id": "003",
+      "id": "155",
       "type": "movie",
       "title": "The Dark Knight",
       "coverImage": "images/the dark knight.jpg",
@@ -46,7 +46,7 @@
       "favorite": true
     },
     {
-      "id": "004",
+      "id": "550",
       "type": "movie",
       "title": "Fight Club",
       "coverImage": "images/fight club.jpg",
@@ -60,7 +60,7 @@
       "duration": "2h 39m"
     },
     {
-      "id": "005",
+      "id": "13",
       "type": "movie",
       "title": "Forrest Gump",
       "coverImage": "images/forrest gump.jpg",
@@ -75,7 +75,7 @@
       "favorite": true
     },
     {
-      "id": "006",
+      "id": "278",
       "type": "movie",
       "title": "The Shawshank Redemption",
       "coverImage": "images/the shawshank redemption.jpg",
@@ -90,7 +90,7 @@
       "favorite": true
     },
     {
-      "id": "007",
+      "id": "238",
       "type": "movie",
       "title": "The Godfather",
       "coverImage": "images/the godfather.jpg",
@@ -104,7 +104,7 @@
       "duration": "1h 45m"
     },
     {
-      "id": "008",
+      "id": "680",
       "type": "movie",
       "title": "Pulp Fiction",
       "coverImage": "images/pulp fiction.jpg",
@@ -118,7 +118,7 @@
       "duration": "1h 12m"
     },
     {
-      "id": "009",
+      "id": "603",
       "type": "movie",
       "title": "The Matrix",
       "coverImage": "images/the matrix.jpg",
@@ -132,7 +132,7 @@
       "duration": "2h 11m"
     },
     {
-      "id": "010",
+      "id": "98",
       "type": "movie",
       "title": "Gladiator",
       "coverImage": "images/gladiator.png",
@@ -146,7 +146,7 @@
       "duration": "2h 2m"
     },
     {
-      "id": "011",
+      "id": "12182",
       "type": "movie",
       "title": "Whiplash",
       "coverImage": "images/whiplash.jpg",
@@ -160,7 +160,7 @@
       "duration": "2h 24m"
     },
     {
-      "id": "012",
+      "id": "1124",
       "type": "movie",
       "title": "The Prestige",
       "coverImage": "images/the prestige.jpg",
@@ -174,7 +174,7 @@
       "duration": "2h 47m"
     },
     {
-      "id": "013",
+      "id": "68718",
       "type": "movie",
       "title": "Django Unchained",
       "coverImage": "images/django unchained.jpg",
@@ -188,7 +188,7 @@
       "duration": "2h 16m"
     },
     {
-      "id": "014",
+      "id": "597",
       "type": "movie",
       "title": "Titanic",
       "coverImage": "images/titanic.png",
@@ -202,7 +202,7 @@
       "duration": "2h 29m"
     },
     {
-      "id": "015",
+      "id": "281957",
       "type": "movie",
       "title": "The Revenant",
       "coverImage": "images/the revenant.jpg",
@@ -217,7 +217,7 @@
       "comingSoon": true
     },
     {
-      "id": "016",
+      "id": "496243",
       "type": "movie",
       "title": "Parasite",
       "coverImage": "images/parasite.png",
@@ -231,7 +231,7 @@
       "duration": "2h 11m"
     },
     {
-      "id": "017",
+      "id": "37799",
       "type": "movie",
       "title": "The Social Network",
       "coverImage": "images/the social network.png",
@@ -245,7 +245,7 @@
       "duration": "2h 16m"
     },
     {
-      "id": "018",
+      "id": "47557",
       "type": "movie",
       "title": "Joker",
       "coverImage": "images/joker.jpg",
@@ -259,7 +259,7 @@
       "duration": "2h 0m"
     },
     {
-      "id": "019",
+      "id": "299534",
       "type": "movie",
       "title": "Avengers: Endgame",
       "coverImage": "images/avengers endgame.jpg",
@@ -273,7 +273,7 @@
       "duration": "2h 37m"
     },
     {
-      "id": "020",
+      "id": "76341",
       "type": "movie",
       "title": "Mad Max: Fury Road",
       "coverImage": "images/mad_max:_fury_road.jpg",
@@ -287,7 +287,7 @@
       "duration": "2h 26m"
     },
     {
-      "id": "021",
+      "id": "1396",
       "type": "series",
       "title": "Breaking Bad",
       "coverImage": "images/breaking bad.jpeg",
@@ -301,7 +301,7 @@
       "duration": "1h 19m"
     },
     {
-      "id": "022",
+      "id": "66732",
       "type": "series",
       "title": "Stranger Things",
       "coverImage": "images/stranger_things.jpg",
@@ -315,7 +315,7 @@
       "duration": "2h 0m"
     },
     {
-      "id": "023",
+      "id": "1399",
       "type": "series",
       "title": "Game of Thrones",
       "coverImage": "images/game_of_thrones.jpg",
@@ -329,7 +329,7 @@
       "duration": "1h 19m"
     },
     {
-      "id": "024",
+      "id": "65494",
       "type": "series",
       "title": "The Crown",
       "coverImage": "images/the_crown.jpg",
@@ -343,7 +343,7 @@
       "duration": "2h 34m"
     },
     {
-      "id": "025",
+      "id": "82856",
       "type": "series",
       "title": "The Mandalorian",
       "coverImage": "images/the_mandalorian.jpg",
@@ -357,7 +357,7 @@
       "duration": "2h 55m"
     },
     {
-      "id": "026",
+      "id": "71912",
       "type": "series",
       "title": "The Witcher",
       "coverImage": "images/the_witcher.jpg",
@@ -371,7 +371,7 @@
       "duration": "2h 18m"
     },
     {
-      "id": "027",
+      "id": "19885",
       "type": "series",
       "title": "Sherlock",
       "coverImage": "images/sherlock.jpg",
@@ -385,7 +385,7 @@
       "duration": "2h 38m"
     },
     {
-      "id": "028",
+      "id": "1425",
       "type": "series",
       "title": "House of Cards",
       "coverImage": "images/house_of_cards.jpg",
@@ -399,7 +399,7 @@
       "duration": "2h 48m"
     },
     {
-      "id": "029",
+      "id": "60574",
       "type": "series",
       "title": "Peaky Blinders",
       "coverImage": "images/peaky_blinders.jpg",
@@ -413,7 +413,7 @@
       "duration": "1h 25m"
     },
     {
-      "id": "030",
+      "id": "76479",
       "type": "series",
       "title": "The Boys",
       "coverImage": "images/the_boys.jpg",
@@ -427,7 +427,7 @@
       "duration": "2h 21m"
     },
     {
-      "id": "031",
+      "id": "63247",
       "type": "series",
       "title": "Westworld",
       "coverImage": "images/westworld.jpg",
@@ -441,7 +441,7 @@
       "duration": "1h 10m"
     },
     {
-      "id": "032",
+      "id": "87108",
       "type": "series",
       "title": "Chernobyl",
       "coverImage": "images/chernobyl.jpg",
@@ -455,7 +455,7 @@
       "duration": "2h 24m"
     },
     {
-      "id": "033",
+      "id": "60059",
       "type": "series",
       "title": "Better Call Saul",
       "coverImage": "images/better_call_saul.jpg",
@@ -469,7 +469,7 @@
       "duration": "1h 20m"
     },
     {
-      "id": "034",
+      "id": "70523",
       "type": "series",
       "title": "Dark",
       "coverImage": "images/the dark knight.jpg",
@@ -483,7 +483,7 @@
       "duration": "1h 28m"
     },
     {
-      "id": "035",
+      "id": "2316",
       "type": "series",
       "title": "The Office",
       "coverImage": "images/the_office.jpg",
@@ -497,7 +497,7 @@
       "duration": "1h 39m"
     },
     {
-      "id": "036",
+      "id": "1668",
       "type": "series",
       "title": "Friends",
       "coverImage": "images/friends.jpg",
@@ -511,7 +511,7 @@
       "duration": "1h 21m"
     },
     {
-      "id": "037",
+      "id": "69740",
       "type": "series",
       "title": "Ozark",
       "coverImage": "images/ozark.jpg",
@@ -525,7 +525,7 @@
       "duration": "2h 5m"
     },
     {
-      "id": "038",
+      "id": "100088",
       "type": "series",
       "title": "The Last of Us",
       "coverImage": "images/the_last_of_us.jpg",
@@ -539,7 +539,7 @@
       "duration": "1h 37m"
     },
     {
-      "id": "039",
+      "id": "67744",
       "type": "series",
       "title": "Mindhunter",
       "coverImage": "images/mindhunter.jpg",
@@ -553,7 +553,7 @@
       "duration": "2h 44m"
     },
     {
-      "id": "040",
+      "id": "46648",
       "type": "series",
       "title": "True Detective",
       "coverImage": "images/true_detective.jpg",
@@ -567,7 +567,7 @@
       "duration": "1h 51m"
     },
     {
-      "id": "041",
+      "id": "862",
       "type": "animation",
       "title": "Toy Story",
       "coverImage": "images/toy story.jpg",
@@ -582,7 +582,7 @@
       "favorite": true
     },
     {
-      "id": "042",
+      "id": "12",
       "type": "animation",
       "title": "Finding Nemo",
       "coverImage": "images/finding nemo.jpg",
@@ -596,7 +596,7 @@
       "duration": "2h 18m"
     },
     {
-      "id": "043",
+      "id": "9806",
       "type": "animation",
       "title": "The Incredibles",
       "coverImage": "images/the_incredibles.jpg",
@@ -610,7 +610,7 @@
       "duration": "2h 38m"
     },
     {
-      "id": "044",
+      "id": "808",
       "type": "animation",
       "title": "Shrek",
       "coverImage": "images/shrek.jpg",
@@ -624,7 +624,7 @@
       "duration": "2h 58m"
     },
     {
-      "id": "045",
+      "id": "109445",
       "type": "animation",
       "title": "Frozen",
       "coverImage": "images/frozen.jpg",
@@ -638,7 +638,7 @@
       "duration": "2h 30m"
     },
     {
-      "id": "046",
+      "id": "269149",
       "type": "animation",
       "title": "Zootopia",
       "coverImage": "images/zootopia.jpg",
@@ -652,7 +652,7 @@
       "duration": "2h 49m"
     },
     {
-      "id": "047",
+      "id": "277834",
       "type": "animation",
       "title": "Moana",
       "coverImage": "images/moana.jpg",
@@ -666,7 +666,7 @@
       "duration": "1h 50m"
     },
     {
-      "id": "048",
+      "id": "354912",
       "type": "animation",
       "title": "Coco",
       "coverImage": "images/coco.jpg",
@@ -680,7 +680,7 @@
       "duration": "2h 34m"
     },
     {
-      "id": "049",
+      "id": "14160",
       "type": "animation",
       "title": "Up",
       "coverImage": "images/up.jpg",
@@ -695,7 +695,7 @@
       "comingSoon": true
     },
     {
-      "id": "050",
+      "id": "508442",
       "type": "animation",
       "title": "Soul",
       "coverImage": "images/soul.jpg",
@@ -710,7 +710,7 @@
       "favorite": true
     },
     {
-      "id": "051",
+      "id": "2062",
       "type": "animation",
       "title": "Ratatouille",
       "coverImage": "images/ratatouille.jpg",
@@ -725,7 +725,7 @@
       "comingSoon": true
     },
     {
-      "id": "052",
+      "id": "62177",
       "type": "animation",
       "title": "Brave",
       "coverImage": "images/brave.jpg",
@@ -740,7 +740,7 @@
       "favorite": true
     },
     {
-      "id": "053",
+      "id": "150540",
       "type": "animation",
       "title": "Inside Out",
       "coverImage": "images/inside out.jpg",
@@ -755,7 +755,7 @@
       "favorite": true
     },
     {
-      "id": "054",
+      "id": "38757",
       "type": "animation",
       "title": "Tangled",
       "coverImage": "images/tangled.jpg",
@@ -770,7 +770,7 @@
       "comingSoon": true
     },
     {
-      "id": "055",
+      "id": "177572",
       "type": "animation",
       "title": "Big Hero 6",
       "coverImage": "images/big hero 6.jpeg",
@@ -784,7 +784,7 @@
       "duration": "1h 12m"
     },
     {
-      "id": "056",
+      "id": "9502",
       "type": "animation",
       "title": "Kung Fu Panda",
       "coverImage": "images/kung fu panda.jpeg",
@@ -798,7 +798,7 @@
       "duration": "1h 29m"
     },
     {
-      "id": "057",
+      "id": "638507",
       "type": "animation",
       "title": "How to Train Your Dragon",
       "coverImage": "images/how_to_train_your_dragon.jpg",
@@ -812,7 +812,7 @@
       "duration": "2h 27m"
     },
     {
-      "id": "058",
+      "id": "20352",
       "type": "animation",
       "title": "Despicable Me",
       "coverImage": "images/despicable_me.jpg",
@@ -826,7 +826,7 @@
       "duration": "2h 20m"
     },
     {
-      "id": "059",
+      "id": "585",
       "type": "animation",
       "title": "Monsters, Inc.",
       "coverImage": "images/monsters inc.jpeg",
@@ -840,7 +840,7 @@
       "duration": "2h 37m"
     },
     {
-      "id": "060",
+      "id": "10681",
       "type": "animation",
       "title": "WALL-E",
       "coverImage": "images/wall-e.jpg",

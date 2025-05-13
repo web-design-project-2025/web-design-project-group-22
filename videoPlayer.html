@@ -4,11 +4,27 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>detail</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="css/videoPlayer.css" />
 
     <script src="js/videoPlayer.js" defer></script>
   </head>
   <body>
+    <section id="movie-details">
+      <img id="cover-image" class="cover-image" src="" alt="" />
+      <section class="details">
+        <div class="icon-button star" ><span class="rating"></span><i class="fas fa-star"></i></div>
+        <p id="description"></p>
+        <p id="genres"></p>
+        <p id="duration"></p>
+        <div class="icon-bar">
+        <div class="icon-button heart" ><i class="fas fa-heart"></i></div>
+        <div class="icon-button share" ><i class="fas fa-share"></i></div>
+        <button class="icon-button play-button"><i class="fas fa-play"></i></button>
+      </div>
+      </section>
+    </section>
+    
     <section id="casts"></section>
     <div class="comment-form">
       <input
