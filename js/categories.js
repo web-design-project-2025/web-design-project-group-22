@@ -84,7 +84,7 @@ function renderMovies(selectedGenreIds) {
   }
 
   if (selectedGenreIds.length === 1) {
-    const category = categories.find(c => c.genreId === selectedGenreIds[0]);
+    const category = categories.find(category => category.genreId === selectedGenreIds[0]);
     header.innerHTML = `
       <div class="category-header">
         <h1>${category.name}</h1>
