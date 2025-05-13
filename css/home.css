@@ -374,19 +374,12 @@ h2 {
 }
 
 /* Add hover effect for celebrity images */
-.slider img {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.5;
-}
-
 .slider img:hover {
-  transform: scale(1.2) rotate(0.5deg);
-  animation: shake 0.5s ease-in-out;
+  transform: scale(1.2);
   opacity: 1;
 }
 
 /* AI part */
-
 #AI {
   display: flex;
   flex-direction: row;
