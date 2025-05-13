@@ -21,10 +21,16 @@ function createCoverElement(cover) {
   const coverElement = document.createElement("figure");
   coverElement.classList.add("cover");
 
+// adding link for covers to videoplayer.html
+  const linkElement = document.createElement("a");
+  linkElement.href = `videoPlayer.html?movie_id=${cover.id}`;
+
   const imageElement = document.createElement("img");
   imageElement.src = cover.coverImage;
   imageElement.alt = cover.title;
-  coverElement.appendChild(imageElement);
+
+  linkElement.appendChild(imageElement)
+  coverElement.appendChild(linkElement);
 
   return coverElement;
 }
