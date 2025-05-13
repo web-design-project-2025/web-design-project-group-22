@@ -116,7 +116,77 @@ h2 {
   margin-bottom: 5px;
 }
 
-/* Reusable Components */
+/* slider */
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.slider {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+  margin-left: 10rem;
+  margin-bottom: 3rem;
+  justify-content: center;
+  position: relative;
+}
+
+.slider img {
+  width: 12%;
+  height: 150px;
+  margin-right: 10px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.5;
+}
+
+.slider img:nth-child(3),
+.slider img:nth-child(4) {
+  width: 16%;
+  height: 200px;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.slider img:nth-child(2),
+.slider img:nth-child(5) {
+  width: 14%;
+  height: 180px;
+  opacity: 0.8;
+}
+
+.slider img:nth-child(1),
+.slider img:nth-child(6) {
+  width: 12%;
+  height: 150px;
+  opacity: 0.5;
+}
+
+.slider-arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 2em;
+  color: #ffb43b;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
 /* Consolidated .cover styles */
 .cover {
   background-color: #141414; /* Ensure consistent background */
@@ -168,6 +238,7 @@ h2 {
   background-color: #141414;
   color: white;
   text-align: center;
+  margin-bottom: 80px;
 }
 
 #categories h2 {
@@ -296,76 +367,6 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   margin-top: 3rem;
-}
-.slider-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-
-.slider {
-  display: flex;
-  overflow: hidden;
-  width: 80%;
-  margin-left: 10rem;
-  margin-bottom: 3rem;
-  justify-content: center;
-  position: relative;
-}
-
-.slider img {
-  width: 12%;
-  height: 150px;
-  margin-right: 10px;
-  object-fit: cover;
-  border-radius: 50%;
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.5;
-}
-
-.slider img:nth-child(3),
-.slider img:nth-child(4) {
-  width: 16%;
-  height: 200px;
-  opacity: 1;
-  transform: scale(1);
-}
-
-.slider img:nth-child(2),
-.slider img:nth-child(5) {
-  width: 14%;
-  height: 180px;
-  opacity: 0.8;
-}
-
-.slider img:nth-child(1),
-.slider img:nth-child(6) {
-  width: 12%;
-  height: 150px;
-  opacity: 0.5;
-}
-
-.slider-arrow {
-  background-color: transparent;
-  border: none;
-  font-size: 2em;
-  color: #ffb43b;
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.left-arrow {
-  left: 10px;
-}
-
-.right-arrow {
-  right: 10px;
 }
 
 /* AI part */
