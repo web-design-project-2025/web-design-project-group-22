@@ -166,7 +166,6 @@ h2 {
 /* Categories Section */
 #categories {
   padding: 40px;
-  background-color: #141414;
   color: white;
   text-align: center;
   margin-top: 50px;
@@ -391,7 +390,6 @@ h2 {
 #AI {
   display: flex;
   flex-direction: row;
-  background-color: #141414;
 }
 #AIPic {
   width: 70%;
