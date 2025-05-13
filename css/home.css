@@ -61,10 +61,12 @@ h2 {
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .navbar .search-box input {
   width: 30%;
+  max-width: 400px;
   padding: 6px 12px;
   border: none;
   border-radius: 20px;
@@ -489,6 +491,9 @@ footer {
 
 /* responsive  */
 @media (max-width: 768px) {
+  body {
+    padding-bottom: 70px;
+  }
   .navbar {
     flex-direction: column;
     justify-content: flex-start;
@@ -520,20 +525,14 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
-  body {
-    padding-bottom: 70px;
-  }
+/* Hide desktop nav */
+.desktop-nav {
+  display: none;
+}
 
-  /* Hide desktop nav */
-  .desktop-nav {
-    display: none;
-  }
-
-  /* Show mobile nav */
-  .mobile-nav {
-    display: flex;
-  }
+/* Show mobile nav */
+.mobile-nav {
+  display: flex;
 }
 
 /*  desktop sizes */
