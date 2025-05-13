@@ -1,72 +1,57 @@
-[
-  {
-    "id": "u001",
-    "username": "movieLover91",
-    "profilePic": "images/users/user1.jpg",
-    "comments": [
-      "This was way better than I expected!",
-      "Amazing cinematography and acting.",
-      "I'd definitely watch this again.",
-      "A bit slow in the middle, but worth it."
-    ],
-    "liked": ["001", "003", "012"],
-    "saved": ["002", "015"],
-    "disliked": ["007"]
-  },
-  {
-    "id": "u002",
-    "username": "cinemaQueen",
-    "profilePic": "images/users/user2.jpg",
-    "comments": [
-      "Loved the plot twist!",
-      "Could’ve been shorter, but still good.",
-      "That ending though 🤯",
-      "Great for a weekend binge."
-    ],
-    "liked": ["005", "006", "009"],
-    "saved": ["001", "013", "018"],
-    "disliked": ["004"]
-  },
-  {
-    "id": "u003",
-    "username": "bingeBeast",
-    "profilePic": "images/users/user3.jpg",
-    "comments": [
-      "Not my favorite, but not bad.",
-      "Had me hooked from the start!",
-      "The soundtrack was 🔥",
-      "Kinda overrated, honestly."
-    ],
-    "liked": ["003", "008", "010"],
-    "saved": ["006", "014"],
-    "disliked": ["002", "019"]
-  },
-  {
-    "id": "u004",
-    "username": "retroWatcher",
-    "profilePic": "images/users/user4.jpg",
-    "comments": [
-      "They don't make them like this anymore.",
-      "Nostalgic and heartwarming.",
-      "Solid story and pacing.",
-      "Really impressed with the visuals!"
-    ],
-    "liked": ["011", "017", "020"],
-    "saved": ["010", "016"],
-    "disliked": ["018"]
-  },
-  {
-    "id": "u005",
-    "username": "dailyStreamer",
-    "profilePic": "images/users/user5.jpg",
-    "comments": [
-      "A decent watch while eating dinner 😅",
-      "Some parts dragged, but still fun.",
-      "Pretty entertaining overall.",
-      "I'd recommend it to friends!"
-    ],
-    "liked": ["012", "015", "019"],
-    "saved": ["004", "005"],
-    "disliked": ["013"]
-  }
-]
+{
+  "users": [
+    {
+      "id": "u001",
+      "username": "movieLover91",
+      "profilePic": "images/users/user1.png",
+      "comments": ["A bit slow in the middle, but worth it."],
+      "liked": ["001", "003", "012"],
+      "saved": ["002", "015"],
+      "disliked": ["007"]
+    },
+    {
+      "id": "u002",
+      "username": "cinemaQueen",
+      "profilePic": "images/users/user2.png",
+      "comments": [
+        "Loved the plot twist!",
+        "That ending though 🤯",
+        "Great for a weekend binge."
+      ],
+      "liked": ["005", "006", "009"],
+      "saved": ["001", "013", "018"],
+      "disliked": ["004"]
+    },
+    {
+      "id": "u003",
+      "username": "bingeBeast",
+      "profilePic": "images/users/user3.png",
+      "comments": ["The soundtrack was 🔥", "Kinda overrated, honestly."],
+      "liked": ["003", "008", "010"],
+      "saved": ["006", "014"],
+      "disliked": ["002", "019"]
+    },
+    {
+      "id": "u004",
+      "username": "retroWatcher",
+      "profilePic": "images/users/user4.jpg",
+      "comments": ["Really impressed with the visuals!"],
+      "liked": ["011", "017", "020"],
+      "saved": ["010", "016"],
+      "disliked": ["018"]
+    },
+    {
+      "id": "u005",
+      "username": "dailyStreamer",
+      "profilePic": "images/users/user5.jpg",
+      "comments": [
+        "A decent watch while eating dinner 😅",
+
+        "I'd recommend it to friends!"
+      ],
+      "liked": ["012", "015", "019"],
+      "saved": ["004", "005"],
+      "disliked": ["013"]
+    }
+  ]
+}

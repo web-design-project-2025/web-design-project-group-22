@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -38,6 +39,11 @@ h1 {
   width: 100%;
   z-index: 1000;
   background-color: #000000;
+
+
+.desktop-nav {
+  background-color: #333;
+
   color: white;
   padding: 10px;
   display: flex;
@@ -46,19 +52,30 @@ h1 {
   box-sizing: border-box;
 }
 
+
 .navbar .logo {
   height: 30px;
+
+.desktop-nav .logo {
+  height: 50px;
+
 }
 
-.navbar .links {
+.desktop-nav .links {
   list-style: none;
   display: flex;
-  flex-direction: row;
+  margin: 0;
+  padding: 0;
   margin-left: 2%;
   gap: 20px;
 }
 
-.navbar a {
+.desktop-nav .links li {
+  margin: 0;
+  padding: 0;
+}
+
+.desktop-nav a {
   color: white;
   text-decoration: none;
   font-size: 14px;
@@ -66,12 +83,20 @@ h1 {
 
 .search-box {
   flex-grow: 1;
+
   display: flex;
   justify-content: center;
 }
 
 .navbar .search-box input {
   width: 30%;
+
+  margin: 0 10%;
+}
+
+.desktop-nav .search-box input {
+  width: 100%;
+
   padding: 6px 12px;
   border: none;
   border-radius: 20px;
@@ -80,9 +105,15 @@ h1 {
   font-size: 14px;
 }
 
+
 .navbar .sign-in {
   background: linear-gradient(to right, #60654e, #23211e);
   color: #d4d2a4;
+
+.desktop-nav .sign-in {
+  background: linear-gradient(to right, #60654E, #23211E);
+  color: #D4D2A4;
+
   border: none;
   border-radius: 15px;
   margin-right: 1%;
@@ -91,11 +122,95 @@ h1 {
   cursor: pointer;
 }
 
-.navbar .sign-in:hover {
+.desktop-nav .sign-in:hover {
   background-color: #555;
 }
 
+
 /* Coming Soon and Users Favorite  */
+=======
+/* Mobile  nav */
+.mobile-nav {
+  display: none; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mobile-nav a {
+  color: #D4D2A4;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.mobile-nav .nav-icon {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+/* Mobile logo */
+.mobile-logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-logo {
+  height: 40px;
+  margin-bottom: 3px;
+}
+
+/* responsive  */
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px;
+  }
+  
+  /* Hide desktop nav */
+  .desktop-nav {
+    display: none;
+  }
+  
+  /* Show mobile nav */
+  .mobile-nav {
+    display: flex;
+  }
+}
+
+/*  desktop sizes */
+@media (min-width: 769px) {
+  .desktop-nav {
+    display: flex;
+  }
+  
+  .mobile-nav {
+    display: none;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
 #coming-soon {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -267,7 +382,95 @@ h2 {
   grid-row: span 2;
 }
 
+
 /* Popular Celebrities Section */
+
+.cover {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.cover:hover {
+  transform: scale(1.05);
+}
+
+.cover img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+footer {
+  background-color: #2f2f2f;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  height: 300px;
+  overflow: hidden;
+}
+
+#logo-section figure {
+  margin: 0;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo-section figure img {
+  max-width: 100%;
+  max-height: 150px;
+  height: auto;
+}
+
+#logo-section p {
+  max-width: 500px;
+  margin: 15px auto;
+  font-size: 14px;
+  color: #999;
+}
+
+#footer-links {
+  margin: 20px 0;
+}
+
+#footer-links .downpart {
+  list-style: none;
+  padding: 0;
+}
+
+#footer-links .downpart li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+#footer-links .downpart li {
+  display: inline;
+  margin: 0 10px;
+}
+
+#footer-social {
+  margin-top: 20px;
+}
+
+#footer-social a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#footer-social a:hover {
+  color: #cba792;
+}
+
+/* popular celeberities */
+
+
 #celeberity-title {
   color: #fff;
   font-size: 2rem;
@@ -341,6 +544,9 @@ h2 {
 .left-arrow {
   left: 10px;
 }
+
+
+
 
 .right-arrow {
   right: 10px;
@@ -462,3 +668,36 @@ footer {
 #footer-social a:hover {
   color: #cba792;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+  }
+
+  .navbar .links,
+  .navbar .search-box {
+      width: 100%;
+      text-align: center;
+  }
+
+  .navbar .sign-in {
+      width: 100%;
+      margin-top: 10px;
+  }
+
+  .category-grid {
+      grid-template-columns: repeat(2, 1fr); /* Two items per row on mobile */
+  }
+
+  .category-card {
+      transform: translateY(30px);
+      animation: fadeUp 0.7s ease-out forwards;
+  }
+
+  footer {
+      padding: 20px;
+  }
+}
+
