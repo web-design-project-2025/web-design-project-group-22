@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>detail</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/videoPlayer.css" />
 
     <script src="js/videoPlayer.js" defer></script>
@@ -13,18 +16,22 @@
     <section id="movie-details">
       <img id="cover-image" class="cover-image" src="" alt="" />
       <section class="details">
-        <div class="icon-button star" ><span class="rating"></span><i class="fas fa-star"></i></div>
+        <div class="icon-button star">
+          <span class="rating"></span><i class="fas fa-star"></i>
+        </div>
         <p id="description"></p>
         <p id="genres"></p>
         <p id="duration"></p>
         <div class="icon-bar">
-        <div class="icon-button heart" ><i class="fas fa-heart"></i></div>
-        <div class="icon-button share" ><i class="fas fa-share"></i></div>
-        <button class="icon-button play-button"><i class="fas fa-play"></i></button>
-      </div>
+          <div class="icon-button heart"><i class="fas fa-heart"></i></div>
+          <div class="icon-button share"><i class="fas fa-share"></i></div>
+          <button class="icon-button play-button">
+            <i class="fas fa-play"></i>
+          </button>
+        </div>
       </section>
     </section>
-    
+
     <section id="casts"></section>
     <div class="comment-form">
       <input
@@ -35,5 +42,44 @@
       <button class="publish-botton">Publish</button>
     </div>
     <section id="comments"></section>
+    <div id="pagination">
+      <div class="page-number">&laquo;</div>
+      <div class="page-number">&#8249;</div>
+      <div id="active">1</div>
+      <div class="page-number">2</div>
+      <div class="page-number">3</div>
+      <div class="page-number">...</div>
+      <div class="page-number">10</div>
+      <div class="page-number">&#8250;</div>
+      <div class="page-number">&raquo;</div>
+    </div>
   </body>
+  <footer>
+    <div id="logo-section">
+      <figure>
+        <img src="logo.svg" alt="AVI logo" />
+      </figure>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt
+        corrupti aspernatur ipsa omnis in! Sint reprehenderit ipsa officiis
+        commodi nesciunt ipsam culpa laborum explicabo odio. Pariatur dolorum ex
+        eveniet dignissimos?
+      </p>
+    </div>
+    <div id="footer-links">
+      <ul class="downpart">
+        <li><a href=""></a>contact us</li>
+        <li><a href=""></a>about us</li>
+        <li><a href=""></a>sitemap</li>
+        <li><a href=""></a>privacy policy</li>
+        <li><a href=""></a>FAQs</li>
+      </ul>
+    </div>
+
+    <div id="footer-social">
+      <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </footer>
 </html>
