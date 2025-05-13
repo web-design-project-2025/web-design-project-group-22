@@ -324,7 +324,7 @@ h2 {
 
 .slider img {
   width: 12%;
-  height: 150px;
+  height: 180px;
   margin-right: 10px;
   object-fit: cover;
   border-radius: 50%;
@@ -385,22 +385,6 @@ h2 {
   opacity: 1;
 }
 
-/* Keyframes for shake animation */
-@keyframes shake {
-  0%,
-  100% {
-    transform: translateX(0) scale(1.2) rotate(0.5deg);
-  }
-  25% {
-    transform: translateX(-5px) scale(1.2) rotate(0.5deg);
-  }
-  50% {
-    transform: translateX(5px) scale(1.2) rotate(0.5deg);
-  }
-  75% {
-    transform: translateX(-5px) scale(1.2) rotate(0.5deg);
-  }
-}
 /* AI part */
 
 #AI {
