@@ -233,7 +233,7 @@ h2 {
 
 .category-card:hover {
   transform: scale(1.03);
-  box-shadow: 0 12px 24px rgba(255, 255, 255, 0.6);
+  box-shadow: 0 12px 24px #72774b;
 }
 
 .category-card:hover img {
@@ -317,16 +317,15 @@ h2 {
   align-items: center;
   position: relative;
   width: 100%;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .slider {
   display: flex;
-  overflow: hidden;
   width: 80%;
   margin-left: 10rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   justify-content: center;
   position: relative;
 }
@@ -337,7 +336,7 @@ h2 {
   margin-right: 10px;
   object-fit: cover;
   border-radius: 50%;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  transition: transform 0.4s ease;
   opacity: 0.5;
 }
 
@@ -384,8 +383,8 @@ h2 {
 
 /* Add hover effect for celebrity images */
 .slider img:hover {
-  transform: scale(1.2);
-  opacity: 1;
+  transform: scale(1.03);
+  box-shadow: 0 12px 24px #72774b;
 }
 
 /* AI part */
