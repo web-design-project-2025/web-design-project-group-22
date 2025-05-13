@@ -264,7 +264,7 @@ h2 {
 }
 
 .category-grid a.large {
-  grid-column: span 2; /* Large items span 2 columns */
+  grid-column: span 2; /* First item spans 2 columns */
 }
 
 /* Category Card Styles */
