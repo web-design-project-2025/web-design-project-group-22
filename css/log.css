@@ -1,0 +1,71 @@
+.avatar-container {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #9aa067;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.avatar-container:hover {
+  background-color: #9aa067;
+}
+
+.avatar-content {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.avatar-container-mobile {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #72774b;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-content-mobile {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.user-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 20px;
+}
+
+.avatar-container,
+.avatar-container-mobile {
+  position: relative;
+  overflow: hidden;
+}
+
+.avatar-container::after,
+.avatar-container-mobile::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.avatar-container:hover::after,
+.avatar-container-mobile:hover::after {
+  opacity: 1;
+}

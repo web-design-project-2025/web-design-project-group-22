@@ -1,67 +1,78 @@
-
 /* slider part */
 .slider-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 40px;
-    padding-left: 15%;
-    padding-bottom: 30px;
-    width: 70%;
-    background-color: #f9f9f9;
-    font-family: 'Helvetice Neue', sans-serif;
-    }
-    
-     #slider-content {
-      position: relative;
-      outline: 3.5px solid #8D8658;
-      border-radius: 14px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-      display: inline-block;
-    }
-    
-    #slider-image {
-      max-width: 100%;
-      width: auto;
-      right: 40px;
-    }
-    
-    #slider-image {
-      opacity: 0;
-      transition: opacity 0.8s ease-in-out;
-    }
-    #slider-image.show {
-      opacity: 1;
-    }
-    
-    .slider-info {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 16px 20px; 
-      background: rgba(255, 255, 255, 0.15);
-      backdrop-filter: blur(5px);
-      border-top: 1px solid rgba(255, 255, 255, 0.2);
-      color: white;
-    }
-    
-    
-    #slider-title {
-      font-size: 1.5rem;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
-    
-    #slider-duration {
-      font-size: 0.9rem;
-      color: #ccc;
-      margin-bottom: 10px;
-    }
-    
-    .play-btn {
-      border: none;
-      border-radius: 8px;
-      cursor: pointer;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+  margin-left: 15%;
+  margin-bottom: 30px;
+  width: 70%;
+  font-family: "Helvetice Neue", sans-serif;
+  transition: box-shadow 0.4s ease;
+}
+
+#slider-content {
+  position: relative;
+  outline: 3.5px solid #8d8658;
+  border-radius: 14px;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slider-section:hover {
+  box-shadow: 0 0 20px 5px rgba(154, 160, 103, 0.8);
+}
+#slider-image {
+  max-width: 100%;
+  width: auto;
+  right: 40px;
+}
+
+#slider-image {
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+#slider-image.show {
+  opacity: 1;
+}
+
+.slider-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  background: rgba(17, 17, 17, 0.525);
+  backdrop-filter: blur(5px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+#slider-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+#slider-duration {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.play-btn {
+  background-color: #9aa067;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.play-btn:hover {
+  background-color: #72774b;
+  transform: scale(1.05);
+}
