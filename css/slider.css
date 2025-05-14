@@ -3,11 +3,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 80px;
-  padding-left: 15%;
-  padding-bottom: 30px;
+  margin-top: 80px;
+  margin-left: 15%;
+  margin-bottom: 30px;
   width: 70%;
   font-family: "Helvetice Neue", sans-serif;
+  transition: box-shadow 0.4s ease;
 }
 
 #slider-content {
@@ -15,10 +16,12 @@
   outline: 3.5px solid #8d8658;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
   display: inline-block;
 }
 
+.slider-section:hover {
+  box-shadow: 0 0 20px 5px rgba(154, 160, 103, 0.8);
+}
 #slider-image {
   max-width: 100%;
   width: auto;
