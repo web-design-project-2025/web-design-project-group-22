@@ -227,7 +227,8 @@ h2 {
 
 .slider {
   display: flex;
-  flex-grow: inherit;
+  width: 100%;
+
   align-items: center;
   margin-top: 3rem;
 
@@ -253,30 +254,30 @@ h2 {
 
 .slider img:nth-child(3),
 .slider img:nth-child(4) {
-  width: 10rem;
-  height: 12.5rem;
+  width: 160px;
+  height: 200px;
   opacity: 1;
   transform: scale(1);
 }
 
 .slider img:nth-child(2),
 .slider img:nth-child(5) {
-  width: 8.75em;
-  height: 11.25rem;
+  width: 140px;
+  height: 180px;
   opacity: 0.8;
 }
 
 .slider img:nth-child(1),
 .slider img:nth-child(6) {
-  width: 7.5rem;
-  height: 9.375rem;
+  width: 120px;
+  height: 150px;
   opacity: 0.5;
 }
 
 .slider-arrow {
   background-color: transparent;
   border: none;
-  font-size: 2em;
+  font-size: 2rem;
   color: #ffb43b;
   cursor: pointer;
   position: relative;
@@ -304,6 +305,7 @@ h2 {
   flex-direction: row;
   width: 100%;
 }
+
 #AIPic {
   width: 50rem;
   height: 62.5rem;
