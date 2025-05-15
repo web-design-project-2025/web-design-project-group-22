@@ -10,7 +10,10 @@
     <script src="js/slider.js" defer></script>
     <script src="js/main.js" defer></script>
     <script src="js/nav.js" defer></script>
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -18,6 +21,7 @@
   </head>
   <body>
     <main>
+      <a href="/news.html" class="news-button">NEWS</a>
       <section id="slider"></section>
       <section class="slider-section">
         <div id="slider-content">
@@ -51,66 +55,133 @@
         Users Favorites
       </h2>
       <section id="users-favorites"></section>
+
+      <section id="watching-history">
+        <h2 id="watching-history-title">Watching History</h2>
+        <div id="history-list">
+          <div class="history-card">
+            <div class="history-info">
+              <div class="history-title">Ted Lasso 2020</div>
+              <div class="history-subtitle">Season 2 · Episode 12</div>
+              <div class="history-ratings">
+                <span class="icon">👁</span><span class="score">8.6</span>
+                <span class="icon">🪙</span><span class="score">4.5</span>
+              </div>
+              <div class="history-actions">
+                <button class="btn more">More</button>
+                <button class="btn continue">Continue watching</button>
+              </div>
+              <div class="history-progress">
+                <div class="history-progress-bar"></div>
+              </div>
+            </div>
+            <div class="history-cover">
+              <img src="images/forrest gump.jpg" alt="Advice Poster" />
+            </div>
+          </div>
+          <div class="history-card">
+            <div class="history-info">
+              <div class="history-title">WandaVision</div>
+              <div class="history-subtitle">Season 1 · Episode 9</div>
+              <div class="history-ratings">
+                <span class="icon">👁</span><span class="score">8.6</span>
+                <span class="icon">🪙</span><span class="score">7.9</span>
+              </div>
+              <div class="history-actions">
+                <button class="btn more">More</button>
+                <button class="btn continue">Continue watching</button>
+              </div>
+              <div class="history-progress">
+                <div class="history-progress-bar"></div>
+              </div>
+            </div>
+            <div class="history-cover">
+              <img src="images/fight club.jpg" alt="WandaVision Poster" />
+            </div>
+          </div>
+          <div class="history-card">
+            <div class="history-info">
+              <div class="history-title">Titanic</div>
+              <div class="history-subtitle">Movie</div>
+              <div class="history-ratings">
+                <span class="icon">👁</span><span class="score">8.6</span>
+                <span class="icon">🪙</span><span class="score">7.9</span>
+              </div>
+              <div class="history-actions">
+                <button class="btn more">More</button>
+                <button class="btn continue">Continue watching</button>
+              </div>
+              <div class="history-progress">
+                <div class="history-progress-bar"></div>
+              </div>
+            </div>
+            <div class="history-cover">
+              <img src="images/kung fu panda.jpeg" alt="Titanic Poster" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="categories">
         <h2 id="categories-title">Categories</h2>
         <div class="category-grid">
-          <a href="/categories/3d" class="large">
+          <a href="/categories.html" class="large">
             <figure class="category-card">
               <img src="images/categories/11.png" alt="3D Movies" />
               <figcaption>3D</figcaption>
             </figure>
           </a>
 
-          <a href="/categories/action" class="large">
+          <a href="/categories.html" class="large">
             <figure class="category-card">
               <img src="images/categories/12.png" alt="Action" />
               <figcaption>Action</figcaption>
             </figure>
           </a>
 
-          <a href="/categories/adventure">
+          <a href="/categories.html">
             <figure class="category-card">
               <img src="images/categories/13.png" alt="Adventure" />
               <figcaption>Adventure</figcaption>
             </figure>
           </a>
 
-          <a href="/categories/animation">
+          <a href="/categories.html">
             <figure class="category-card">
               <img src="images/categories/14.png" alt="Animation" />
               <figcaption>Animation</figcaption>
             </figure>
           </a>
 
-          <a href="/categories/biography">
+          <a href="/categories.html">
             <figure class="category-card">
               <img src="images/categories/15.png" alt="Biography" />
               <figcaption>Biography</figcaption>
             </figure>
           </a>
 
-          <a href="/categories/comedy">
+          <a href="/categories.html">
             <figure class="category-card">
               <img src="images/categories/16.png" alt="Comedy" />
               <figcaption>Comedy</figcaption>
             </figure>
           </a>
 
-          <a href="/categories/crime">
+          <a href="/categories.html">
             <figure class="category-card">
               <img src="images/categories/17.png" alt="Crime" />
               <figcaption>Crime</figcaption>
             </figure>
           </a>
 
-          <a href="/categories/devotional">
+          <a href="/categories.html">
             <figure class="category-card">
               <img src="images/categories/18.png" alt="Devotional" />
               <figcaption>Devotional</figcaption>
             </figure>
           </a>
 
-          <a href="/categories/documentary" class="large">
+          <a href="/categories.html" class="large">
             <figure class="category-card">
               <img src="images/categories/19.png" alt="Documentary" />
               <figcaption>Documentary</figcaption>

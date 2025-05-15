@@ -7,35 +7,31 @@
   margin-left: 15%;
   margin-bottom: 30px;
   width: 70%;
-  font-family: "Helvetice Neue", sans-serif;
+  font-family: Inter, sans-serif;
   transition: box-shadow 0.4s ease;
 }
 
 #slider-content {
   position: relative;
-  outline: 3.5px solid #8d8658;
-  border-radius: 14px;
+  outline: 3.5px solid #9aa067;
+  border-radius: 10px;
   overflow: hidden;
   display: inline-block;
 }
 
 .slider-section:hover {
-  box-shadow: 0 0 20px 5px rgba(154, 160, 103, 0.8);
+  box-shadow: 0 8px 24px 0 #9aa067;
 }
 #slider-image {
   max-width: 100%;
   width: auto;
   right: 40px;
-}
-
-#slider-image {
   opacity: 0;
   transition: opacity 0.8s ease-in-out;
 }
 #slider-image.show {
   opacity: 1;
 }
-
 .slider-info {
   position: absolute;
   bottom: 0;
@@ -64,7 +60,7 @@
   background-color: #9aa067;
   color: #ffffff;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;

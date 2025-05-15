@@ -21,7 +21,7 @@ function createCoverElement(cover) {
   const coverElement = document.createElement("figure");
   coverElement.classList.add("cover");
 
-// adding link for covers to videoplayer.html
+  // adding link for covers to videoplayer.html
   const linkElement = document.createElement("a");
   linkElement.href = `videoPlayer.html?movie_id=${cover.id}`;
 
@@ -29,7 +29,7 @@ function createCoverElement(cover) {
   imageElement.src = cover.coverImage;
   imageElement.alt = cover.title;
 
-  linkElement.appendChild(imageElement)
+  linkElement.appendChild(imageElement);
   coverElement.appendChild(linkElement);
 
   return coverElement;
@@ -109,3 +109,28 @@ rightArrow.addEventListener("click", () => {
 });
 
 loadCelebritiesData(); // Loading celebrities pictures
+
+// Hide AI section if logged in
+if (localStorage.getItem("isLoggedIn") === "true") {
+  const aiSection = document.getElementById("AI");
+  if (aiSection) {
+    aiSection.style.display = "none";
+  }
+}
+
+// Show Watching History section if logged in
+if (localStorage.getItem("isLoggedIn") === "true") {
+  const historySection = document.getElementById("watching-history");
+  if (historySection) {
+    historySection.style.display = "block";
+    renderWatchingHistory();
+  }
+}
+
+// Hide Watching History section if not logged in
+if (localStorage.getItem("isLoggedIn") !== "true") {
+  const historySection = document.getElementById("watching-history");
+  if (historySection) {
+    historySection.style.display = "none";
+  }
+}
