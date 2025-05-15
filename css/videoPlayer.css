@@ -1,21 +1,45 @@
-#movie-details {
-  padding: 10px;
-  text-align: left;
-  display: flex;
-  gap: 20px;
+*{
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  box-sizing: border-box;
 }
 
-#movie-details h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+body {
+  background-color: black;
+}
+
+#title{
+  position: absolute;
+  top: 10rem;
+  left: 5rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+  background: none;
+  text-align: left;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 1.8em;
+    left: 30px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.6em;
+    left: 20px; 
+  }
 }
 
 #cover-image {
-  width: 100vw;
-  max-height: 500px;
+  margin-top: 1%;
+  width: 97vw;
+  max-height: 540px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 24px 24px rgba(141, 134, 88, 0.5);
   transition: transform 0.3s ease, opacity 0.3s ease;
   animation: fadeIn 1s ease-out;
 }
@@ -31,28 +55,40 @@
 }
 
 .rating {
-  position: fixed;
-  left: 20px;
+  position: absolute;
+  left: 1.5%;
   color: white;
   font-size: 1.1rem;
 }
+
 .star {
+  position: absolute;
   color: rgb(255, 213, 0);
   padding-left: 30px;
 }
 
 .share {
-  position: fixed;
-  top: 12%;
-  right: 5%;
+  position: absolute;
+  bottom: 15rem;
+  left: 10rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  background: none;
+  text-align: left;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
 }
 
 .heart {
-  position: fixed;
-  color: red;
-  font-size: 1.5rem;
-  top: 10%;
-  right: 9%;
+  position: absolute;
+  bottom: 15rem;
+  left: 4.6rem;
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+  font-weight: 800;
+  background: none;
+  text-align: left;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
 }
 
 .play-button {
@@ -76,20 +112,23 @@
 
 .details {
   position: absolute;
-  bottom: 20%;
+  bottom: 17%;
   padding: 16px 20px;
-  width: 95vw;
+  width: 97vw;
+  height: 13vw;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: fadeIn 1s ease-out;
 }
 
 #description {
-  top: 15%;
-  font-size: 1.1rem;
+  position: absolute;
+  top: 30%;
+  font-size: 1.2rem;
   align-items: start;
-  color: white;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 #genres {
@@ -99,12 +138,12 @@
   align-items: start;
   color: white;
 }
+
 #duration {
+  position: absolute;
+  top: 67%;
   color: white;
   font-size: 1.3rem;
-}
-body {
-  background-color: black;
 }
 
 #casts {

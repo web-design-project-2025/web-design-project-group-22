@@ -10,7 +10,7 @@ const imageBaseUrl = "https://image.tmdb.org/t/p/w1280";
 const urlParams = new URLSearchParams(window.location.search);
 const movieId = urlParams.get("movie_id");
 const contentType = urlParams.get("type") || "movie";
-
+const titleElement = document.getElementById("title");
 const coverImageElement = document.getElementById("cover-image");
 const descriptionElement = document.getElementById("description");
 const genresElement = document.getElementById("genres");
@@ -28,6 +28,7 @@ async function loadContentDetails() {
     ? `${imageBaseUrl}${data.backdrop_path}`
     : "images/placeholder.jpg";
   coverImageElement.alt = data.title || data.name || "Unknown";
+  titleElement.textContent  = data.title || data.name || "Unknown";
   descriptionElement.textContent = data.overview || "No description available.";
   genresElement.textContent =
     data.genres?.map((g) => g.name).join(", ") || "Unknown";
