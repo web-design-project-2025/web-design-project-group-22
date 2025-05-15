@@ -67,6 +67,11 @@ function createGenreFilters() {
       renderMovies(checkedGenreIds);
     });
   });
+
+  const clearButton = document.querySelector(".clear-button");
+  if (clearButton) {
+    clearButton.addEventListener("click", clearAllFilters);
+  }
 }
 
 function clearAllFilters() {

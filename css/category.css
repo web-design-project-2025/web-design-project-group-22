@@ -37,6 +37,19 @@ main {
   height: 30rem;
 }
 
+.clear-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+
 #filter-sidebar h3 {
   font-size: 1.4em;
   margin-bottom: 2rem;
