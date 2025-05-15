@@ -30,28 +30,6 @@
       "liked": ["003", "008", "010"],
       "saved": ["006", "014"],
       "disliked": ["002", "019"]
-    },
-    {
-      "id": "u004",
-      "username": "retroWatcher",
-      "profilePic": "images/users/user4.jpg",
-      "comments": ["Really impressed with the visuals!"],
-      "liked": ["011", "017", "020"],
-      "saved": ["010", "016"],
-      "disliked": ["018"]
-    },
-    {
-      "id": "u005",
-      "username": "dailyStreamer",
-      "profilePic": "images/users/user5.jpg",
-      "comments": [
-        "A decent watch while eating dinner 😅",
-
-        "I'd recommend it to friends!"
-      ],
-      "liked": ["012", "015", "019"],
-      "saved": ["004", "005"],
-      "disliked": ["013"]
     }
   ]
 }
