@@ -183,9 +183,16 @@ header h1 {
 }
 
 footer {
-  background-color: #1a1a1a;
-  padding: 30px 0;
-  margin-top: 60px;
+  background-color: #000000;
+  color: #ccc;
+  text-align: center;
+  padding: 40px 20px;
+  height: auto;
+  min-height: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0;
 }
 
 .footer-content {
@@ -221,6 +228,8 @@ footer {
 
 .header-image {
   width: 50%;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .header-image img {
@@ -228,6 +237,7 @@ footer {
   height: 400px;
   object-fit: cover;
   border-radius: 8px;
+  max-width: 100%;
 }
 
 .header-text {
@@ -295,20 +305,6 @@ footer {
   border-radius: 8px;
 }
 
-/* Footer Section*/
-footer {
-  background-color: #000000;
-  color: #ccc;
-  text-align: center;
-  padding: 40px 20px;
-  height: 300px;
-  overflow: hidden;
-  width: 100vw;
-  margin-left: -20px;
-  box-sizing: border-box;
-  position: relative;
-}
-
 #logo-section figure {
   margin: 0;
   width: 150px;
@@ -362,4 +358,131 @@ footer {
 
 #footer-social a:hover {
   color: #cba792;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-image {
+    width: 100%;
+  }
+
+  .header-image img {
+    height: 300px;
+  }
+
+  .movie-layout {
+    flex-direction: column;
+  }
+
+  .movie-left-column {
+    width: 100%;
+  }
+
+  .movie-scenes {
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 16px;
+  }
+
+  .scene-item {
+    min-width: 280px;
+  }
+
+  footer {
+    padding: 30px 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .intro h2 {
+    font-size: 1.5rem;
+  }
+
+  .movie-title h3 {
+    font-size: 24px;
+  }
+
+  .movie-title .year {
+    font-size: 20px;
+  }
+
+  .movie-quote {
+    font-size: 18px;
+  }
+
+  .movie-images {
+    flex-direction: column;
+  }
+
+  .movie-images img {
+    width: 100%;
+  }
+
+  .movie-meta {
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-label {
+    text-align: center;
+    display: block;
+  }
+
+  .movie-title {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  #footer-links .downpart li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .movie-description p {
+    font-size: 14px;
+  }
+
+  .top-label {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .header-image img {
+    height: 250px;
+  }
+
+  footer {
+    padding: 20px 10px;
+  }
+
+  #logo-section figure {
+    width: 120px;
+  }
+
+  #logo-section p {
+    padding: 0 15px;
+  }
 }
