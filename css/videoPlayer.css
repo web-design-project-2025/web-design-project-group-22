@@ -38,8 +38,8 @@ body {
   background-color: none;
   color: #ffffff;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   background: none;
 }
@@ -60,7 +60,7 @@ body {
 .share {
   position: absolute;
   bottom: 15rem;
-  left: 10rem;
+  left: 12rem;
   font-size: 2rem;
   color: rgb(255, 255, 255);
   font-weight: 800;
@@ -84,9 +84,32 @@ body {
 .play-button {
   position: absolute;
   bottom: 25px;
-  right: 10%;
+  right: 13%;
   background: #ffffff;
   color: #000000;
+  font-size: 12px;
+}
+
+.bell{
+  position: absolute;
+  bottom: 15rem;
+  left: 8.5rem;
+  font-size: 2rem;
+  color: rgb(224, 198, 0);
+  font-weight: 800;
+  background: none;
+  text-align: left;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
+}
+
+.all {
+  position: absolute;
+  bottom: 30px;
+  right: 3rem;
+  background: none;
+  background-color: black;
+  color: #ffffff;
+  outline: 2px solid white;
 }
 
 @keyframes fadeIn {
@@ -311,17 +334,22 @@ footer {
   }
   
   .share {
-    bottom: 14rem;
+    bottom: 15rem;
   }
   
   .heart {
-    bottom: 14rem;
+    bottom: 15rem;
     left: 5rem;
   }
 
   .play-button{
-    top: 9rem;
+    top: 9.5rem;
+    right: 12rem;
   }
+
+  .bell {
+   bottom: 15rem;
+   }
 
   #duration{
    font-size: 1.2rem;
@@ -346,47 +374,74 @@ footer {
   }
   
   #cover-image {
-    max-height: 400px;
-    width: 97%;
+    max-height: 600px;
+    width: 97vw;
   }
   
   .details {
-    width: 95vw;
-    bottom: 18rem;
+    width: 97vw;
+    bottom: 20rem;
     height: 9rem;
   }
 
   #title{
-    bottom: 17rem;
+    bottom: 16rem;
     left: 3rem;
   }
   
   .share {
-    bottom: 11rem;
-    font-size: 1.5rem;
-    left: 7rem;
+    bottom: 9.5rem;
+    font-size: 1.3rem;
+    left: 7.5rem;
   }
   
   .heart {
-    bottom: 11rem;
+    bottom: 9.5rem;
     left: 3.5rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
+
+  .bell {
+   bottom: 9.5rem;
+   left: 5.5rem;
+   font-size: 1.3rem;
+   }
+
+   .icon-button{
+    width: 20px;
+    height: 20px;
+   }
+
   .play-button{
-    top:6rem;
-    font-size: 1rem;
+    top:6.5rem;
+    font-size: 0.4rem;
+    right: 8rem;
+  }
+
+  .all{
+    font-size: 0.4rem;
+    bottom: 1.5rem;
   }
 
   #genres{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   #duration{
-   font-size: 1rem;
+   font-size: 0.6rem;
   }
 
   #description{
+    font-size: 0.7rem;
+  }
+
+  .rating{
     font-size: 0.8rem;
+  }
+
+  .star{
+    font-size: 0.8rem;
+    top: 0.6rem;
   }
 
   #casts {
