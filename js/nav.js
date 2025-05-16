@@ -63,7 +63,7 @@ searchInput.type = "text";
 searchInput.placeholder = "search";
 searchContainer.appendChild(searchInput);
 searchInput.addEventListener("click", () => {
-  window.Location.href = "categories.html";
+  window.location.href = "categories.html";
 })
 desktopNav.appendChild(searchContainer);
 
