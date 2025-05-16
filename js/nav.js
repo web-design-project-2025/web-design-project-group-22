@@ -36,8 +36,8 @@ if (isLoggedIn) {
   if (currentPage !== "categories.html") {
     const categoriesLink = document.createElement("li");
     const categoriesLinkA = document.createElement("a");
-    categoriesLinkA.href = "categories.html";
-    categoriesLinkA.textContent = "Categories";
+    categoriesLinkA.href = "#";
+    categoriesLinkA.innerHTML = '<i class="fas fa-robot nav-icon">';
     categoriesLink.appendChild(categoriesLinkA);
     linksContainer.appendChild(categoriesLink);
   }
@@ -47,7 +47,8 @@ if (isLoggedIn) {
     const viewTogetherLink = document.createElement("li");
     const viewTogetherLinkA = document.createElement("a");
     viewTogetherLinkA.href = "viewTogether.html";
-    viewTogetherLinkA.textContent = "View Together";
+    viewTogetherLinkA.innerHTML =
+      '<i class="fas fa-users nav-icon"></i>';
     viewTogetherLink.appendChild(viewTogetherLinkA);
     linksContainer.appendChild(viewTogetherLink);
   }
@@ -61,6 +62,9 @@ const searchInput = document.createElement("input");
 searchInput.type = "text";
 searchInput.placeholder = "search";
 searchContainer.appendChild(searchInput);
+searchInput.addEventListener("click", () => {
+  window.Location.href = "categories.html";
+})
 desktopNav.appendChild(searchContainer);
 
 if (!isLoggedIn) {
@@ -93,7 +97,6 @@ if (!isLoggedIn) {
 const mobileNav = document.createElement("div");
 mobileNav.classList.add("mobile-nav");
 
-if (isLoggedIn) {
   // Categories
   if (currentPage !== "categories.html") {
     const categoryMobileLink = document.createElement("a");
@@ -111,6 +114,15 @@ if (isLoggedIn) {
       '<i class="fas fa-users nav-icon"></i><span>View Together</span>';
     mobileNav.appendChild(viewTogetherMobileLink);
   }
+  // logo part for mobile nav  
+  const mobileLogo = document.createElement("a");
+  mobileLogo.href = "index.html";
+  mobileLogo.classList.add("mobile-logo-container");
+  const mobileLogoImg = document.createElement("img");
+  mobileLogoImg.src = "mobile-nav-logo.png";
+  mobileLogoImg.classList.add("mobile-logo");
+  mobileLogo.appendChild(mobileLogoImg);
+  mobileNav.appendChild(mobileLogo);
 
   //AI icon
   const aiMobileLink = document.createElement("a");
@@ -118,7 +130,6 @@ if (isLoggedIn) {
   aiMobileLink.innerHTML =
     '<i class="fas fa-robot nav-icon"></i><span>AI</span>';
   mobileNav.appendChild(aiMobileLink);
-}
 
 //Logo mobile version
 if (currentPage !== "index.html") {
