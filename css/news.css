@@ -17,58 +17,6 @@ body {
   padding: 20px;
 }
 
-nav {
-  background-color: #1a1a1a;
-  padding: 10px 0;
-  border-bottom: 1px solid #333;
-  margin-bottom: 30px;
-}
-
-.nav-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 30px;
-  margin-right: 10px;
-}
-
-.nav-right {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.search-bar {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  padding: 5px 15px;
-  display: flex;
-  align-items: center;
-}
-
-.search-bar input {
-  background: transparent;
-  border: none;
-  color: white;
-  padding: 5px;
-  width: 200px;
-}
-
-.search-bar input:focus {
-  outline: none;
-}
-
 header {
   text-align: left;
   margin-bottom: 40px;
@@ -79,10 +27,9 @@ header {
 
 header h1 {
   font-size: 2.5rem;
-  color: #fa320a;
+  color: #9aa067;
   text-transform: uppercase;
   font-weight: bold;
-  font-family: "Franklin Gothic Medium", Arial, sans-serif;
 }
 
 .intro {
@@ -278,7 +225,7 @@ footer {
 
 .header-image img {
   width: 100%;
-  height: 100%;
+  height: 400px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -287,23 +234,25 @@ footer {
   width: 25%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  height: 400px;
 }
 
 .section-label {
   display: inline-block;
   padding: 4px 12px;
-  background-color: rgba(250, 50, 10, 0.1);
-  color: #fa320a;
+  background-color: rgba(154, 160, 103, 0.1);
+  color: #9aa067;
   border-radius: 4px;
   font-weight: 600;
   font-size: 14px;
+  margin-bottom: 24px;
 }
 
 .news-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 20px;
+  flex: 1;
 }
 
 .news-item {
@@ -312,17 +261,25 @@ footer {
   color: #ffffff;
 }
 
+.news-item.featured {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .news-item.featured h3 {
   font-size: 18px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
   line-height: 1.4;
+  color: #ffffff;
 }
 
 .news-item.featured p {
-  color: #999999;
+  color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.6;
+  flex: 1;
 }
 
 .movie-images {
