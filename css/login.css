@@ -9,6 +9,24 @@ body {
   height: 100vh;
 }
 
+.news-button {
+  position: fixed;
+  right: 30px;
+  top: 100px;
+  background-color: #9aa067;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 5px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.news-button:hover {
+  background-color: #72774b;
+}
+
 .login-section {
   flex: 1;
   display: flex;
