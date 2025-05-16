@@ -4,12 +4,16 @@
 }
 
 body {
+  max-width: 1200px;
+  overflow-x: hidden; 
   background-color: black;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
 }
 
 #title{
-  position: absolute;
-  top: 10rem;
+  position: relative;
+  bottom: 25rem;
   left: 5rem;
   font-size: 2rem;
   color: white;
@@ -17,20 +21,6 @@ body {
   background: none;
   text-align: left;
   text-shadow: 0 0 10px rgb(0, 0, 0, 1);
-}
-
-@media (max-width: 768px) {
-  .title {
-    font-size: 1.8em;
-    left: 30px; 
-  }
-}
-
-@media (max-width: 480px) {
-  .title {
-    font-size: 1.6em;
-    left: 20px; 
-  }
 }
 
 #cover-image {
@@ -148,13 +138,11 @@ body {
 
 #casts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 0.25rem;
-  padding: 0;
+  grid-template-columns: repeat(6,1fr);
   border: whitesmoke;
   list-style: none;
   padding-bottom: 7rem;
-  padding-top: 2rem;
+  margin-right: 2rem;
 }
 
 .comment-form {
@@ -291,4 +279,132 @@ footer {
 
 #footer-social a:hover {
   color: #cba792;
+}
+
+
+@media screen and (max-width: 768px) {
+  #movie-details {
+    flex-direction: column;
+  }
+  
+  #cover-image {
+    max-height: 400px;
+    width: 97%;
+  }
+  
+  .details {
+    width: 95vw;
+    bottom: 12rem;
+    height: 13rem;
+  }
+
+  #title{
+    bottom: 24rem;
+  }
+  
+  .share {
+    bottom: 14rem;
+  }
+  
+  .heart {
+    bottom: 14rem;
+    left: 5rem;
+  }
+  #duration{
+   font-size: 1.2rem;
+  }
+
+  #description{
+    font-size: 1.1rem;
+  }
+
+  #casts {
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+  .comment-form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #movie-details h1 {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+  }
+  
+  #cover-image {
+    max-height: 350px;
+    border-radius: 10px;
+  }
+  
+  .rating {
+    left: 10px;
+  }
+  
+  .star {
+    padding-left: 20px;
+  }
+  
+  .share {
+    right: 3%;
+  }
+  
+  .heart {
+    right: 12%;
+  }
+  
+  .play-button {
+    bottom: 15px;
+    right: 5%;
+  }
+  
+  .details {
+    bottom: 10%;
+    padding: 10px 15px;
+    width: 90vw;
+  }
+  
+  #description, #genres {
+    font-size: 1rem;
+  }
+  
+  #duration {
+    font-size: 1.1rem;
+  }
+  
+  #casts {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    padding-bottom: 5rem;
+  }
+  
+  .comment-form {
+    flex-direction: column;
+  }
+  
+  .publish-botton {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Extra small devices */
+@media screen and (max-width: 360px) {
+  #movie-details h1 {
+    font-size: 1.5em;
+  }
+  
+  #cover-image {
+    max-height: 250px;
+  }
+  
+  .icon-button {
+    width: 40px;
+    height: 40px;
+  }
+  
+  #casts {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
 }
