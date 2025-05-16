@@ -67,6 +67,18 @@ function createGenreFilters() {
       renderMovies(checkedGenreIds);
     });
   });
+
+  const clearButton = document.querySelector(".clear-button");
+  if (clearButton) {
+    clearButton.addEventListener("click", clearAllFilters);
+  }
+}
+
+function clearAllFilters() {
+  genreFilters.querySelectorAll("input[type=checkbox]").forEach(checkbox => {
+    checkbox.checked = false;
+  });
+  renderMovies([]);
 }
 
 // Render movies based on selected genres
@@ -139,14 +151,13 @@ function renderMovies(selectedGenreIds) {
       section.className = "category-section";
       section.innerHTML = `
         <div class="category-header">
-          <h2>${category.name}</h2>
-          <button class="more-button">More</button>
+          <div class="category-title" onclick="renderMovies([${category.genreId}])">
+            <h2>${category.name}</h2>
+            <i class="fas fa-chevron-right"></i>
+          </div>
         </div>
         <div class="movie-grid"></div>
       `;
-
-      const moreButton = section.querySelector(".more-button");
-      moreButton.addEventListener("click", () => renderMovies([category.genreId]));
 
       const movieGrid = section.querySelector(".movie-grid");
       let count = 0;

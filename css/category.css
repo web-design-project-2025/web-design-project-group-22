@@ -27,7 +27,7 @@ main {
 #filter-sidebar {
   width: 250px;
   padding: 20px;
-  margin-top: 8.5rem;
+  margin-top: 9.5rem;
   margin-right: 1rem;
   margin-left:-3rem ;
   background: rgba(87, 86, 86, 0.5);
@@ -35,6 +35,19 @@ main {
   border-radius: 15px;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   height: 30rem;
+}
+
+.clear-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
 }
 
 #filter-sidebar h3 {
@@ -100,20 +113,37 @@ main {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
+  margin-left: 3px ;
 }
 
 .category-section h2 {
   font-size: 1.8em;
   color: #ffffff;
-  margin: 0;
+  position: relative;
+  top: 2rem;
   font-weight: 600;
+}
+.category-title {
+  cursor: pointer;
+  display: flex; 
+  gap: 10px;
+}
+.category-title h2 {
+ position: relative;
+ color: #E0E0D0;
+}
+.category-title i{
+  position: relative;
+   font-size: 1.2em;
+   top: 2.5rem;
+  color: #9AA067;
 }
 
 .movie-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .movie-card {
@@ -121,6 +151,7 @@ main {
   color: #e0e0e0;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding-top:15px ;
 }
 
 .movie-card img {
@@ -129,7 +160,6 @@ main {
   height: 270px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease;
 }
 
@@ -147,66 +177,6 @@ main {
 
 .movie-card:hover img {
   transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  body {
-    padding-bottom: 70px;
-  }
-
-  .categories-container {
-    flex-direction: column;
-  }
-
-  #filter-sidebar {
-    width: 100%;
-    padding: 15px;
-  }
-
-  #categories h1 {
-    font-size: 2em;
-  }
-
-  .category-section h2 {
-    font-size: 1.5em;
-  }
-
-  .movie-grid {
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-    gap: 15px;
-  }
-
-  .movie-card img {
-    height: 220px;
-  }
-
-}
-
-@media (max-width: 480px) {
-  main {
-    padding: 15px;
-  }
-
-  #categories h1 {
-    font-size: 1.8em;
-  }
-
-  .category-section h2 {
-    font-size: 1.3em;
-  }
-
-  .movie-grid {
-    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-    gap: 10px;
-  }
-
-  .movie-card img {
-    height: 180px;
-  }
-
-  .movie-card p {
-    font-size: 0.9em;
-  }
 }
 
 /* nav bar */
@@ -254,7 +224,7 @@ main {
   padding: 6px 12px;
   border: none;
   border-radius: 20px;
-  background-color: #9AA067;
+  background-color: hsl(66, 23%, 52%);
   color: white;
   font-size: 14px;
 }
@@ -343,15 +313,6 @@ main {
   }
 }
 
-.more-button {
-  background-color: #000000;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 0.9em;
-  position: absolute;
-  right: 5%;
-}
 .back-button{
   background-color: #000000;
   color: white;
@@ -360,4 +321,110 @@ main {
   font-size: 0.9em;
   position: absolute;
   right: 5%;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 70px;
+  }
+  
+  main {
+    padding: 20px 10px;
+  }
+    
+  .categories-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  #filter-sidebar {
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+    height: auto;
+    position: relative;
+  }
+  
+  #filter-sidebar.active {
+    display: block;
+  }
+  
+  #categories h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .category-section h2 {
+    font-size: 1.5em;
+  }
+  
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+  }
+  
+  .movie-card img {
+    height: 200px;
+  }
+  
+  /* Hide desktop nav */
+  .desktop-nav {
+    display: none;
+  }
+  
+  /* Show mobile nav */
+  .mobile-nav {
+    display: flex;
+  }
+  
+  .mobile-logo-container {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 15px 10px;
+  }
+  
+  #categories h1 {
+    font-size: 1.8em;
+    margin-bottom: 16px;
+  }
+  
+  .category-section h2 {
+    font-size: 1.3rem;
+    top: 1rem;
+  }
+  
+  .category-header {
+    margin-bottom: 15px;
+  }
+
+  .category-title i{
+    top: 1.3rem;
+  }
+
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  
+  .movie-card {
+    padding-top: 10px;
+  }
+  
+  .movie-card img {
+    height: 170px;
+  }
+  
+  .movie-card p {
+    font-size: 0.9em;
+    margin-top: 8px;
+  }
+  
+  #genre-filters {
+    gap: 20px;
+  }
+  
 }
