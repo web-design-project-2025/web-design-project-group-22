@@ -14,7 +14,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px 20px 20px;
+  padding: 60px 20px 20px 20px;
 }
 
 header {
@@ -373,6 +373,25 @@ footer {
   color: #cba792;
 }
 
+.news-button {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #9aa067;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+  z-index: 1000;
+}
+
+.news-button:hover {
+  background-color: #72774b;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 1200px) {
   .container {
@@ -496,6 +515,11 @@ footer {
   .movie-meta {
     flex-wrap: wrap;
     gap: 16px;
+  }
+
+  .news-button {
+    right: 15px;
+    padding: 10px 20px;
   }
 }
 
