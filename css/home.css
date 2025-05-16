@@ -145,12 +145,14 @@ h2 {
 }
 
 .category-card figcaption {
-  position: absolute;
-  bottom: 15px;
-  left: 15px;
-  background: rgba(0, 0, 0, 0.6);
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 80);
   padding: 6px 12px;
-  border-radius: 10px;
+  border-radius: 5px;
   font-weight: bold;
   color: #9aa067;
 }
@@ -247,7 +249,7 @@ h2 {
   align-items: center;
   justify-content: center;
 
-  border-radius: 31.25rem;
+  border-radius: 50%;
   transition: transform 0.4s ease;
   opacity: 0.5;
 }
@@ -386,14 +388,15 @@ h2 {
 
 #watching-history {
   display: flex;
-  flex-direction: column;
+
   align-items: center;
 }
 
 #history-list {
   display: flex;
+  align-items: center;
   gap: 24px;
-  flex-wrap: wrap;
+  flex-direction: row;
   margin-top: 18px;
   justify-content: center;
 }
@@ -403,11 +406,11 @@ h2 {
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
   padding: 18px 18px 12px 18px;
-  width: 340px;
+  width: 21.25rem;
   color: #e0e0e0;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+
   position: relative;
 }
 
@@ -585,5 +588,154 @@ footer {
   }
   #categories {
     display: none;
+  }
+  #history-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+
+    margin-top: 18px;
+    justify-content: center;
+  }
+  .history-card {
+    background: #23232b;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+    padding: 18px 18px 12px 18px;
+    width: 70rem;
+    height: fit-content;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: row;
+
+    position: relative;
+  }
+  #coming-soon {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.5rem, 0.5fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 7rem;
+    margin-top: 3rem;
+  }
+
+  #users-favorites {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(2.5rem, 0.5fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+  }
+  .history-cover {
+    width: 300px;
+    height: 400px;
+    border-radius: 10px;
+    margin-bottom: 0rem;
+    overflow: hidden;
+    margin-left: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    flex-shrink: 0;
+  }
+  .history-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .history-progress {
+    width: 100%;
+    height: 10px;
+    background: #2d2d38;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    margin-top: 4rem;
+  }
+  .history-title {
+    font-size: 3.15rem;
+    font-weight: 600;
+    margin-bottom: 2px;
+    color: #fff;
+  }
+  .history-subtitle {
+    font-size: 2.98rem;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+  }
+
+  .history-ratings {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  .history-ratings .icon {
+    font-size: 4.1em;
+    margin-right: 2px;
+  }
+  .history-ratings .score {
+    color: #ffd700;
+    font-weight: 800;
+    margin-right: 8px;
+  }
+
+  .history-actions {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .history-actions .btn {
+    border: none;
+    border-radius: 6px;
+    padding: 5px 16px;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+  }
+
+  #celeberity-title {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+
+    margin-top: 10rem;
+  }
+  #watching-history-title {
+    color: #fff;
+    font-size: 5rem;
+    margin: bottom 3rem;
+    margin-top: 10rem;
+    margin-bottom: 7rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Inter, sans-serif;
+    font-weight: 600;
+  }
+  .slider {
+    margin-bottom: 4rem;
+  }
+  h2 {
+    font-size: 5rem;
+    margin-top: 1rem;
+  }
+  .section-icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .cover img {
+    width: 150%;
+    height: 120%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    outline: 3.5px solid #9aa067;
   }
 }
