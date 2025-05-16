@@ -387,6 +387,7 @@ footer {
   #title{
     bottom: 16rem;
     left: 3rem;
+    font-size: 1rem;
   }
   
   .share {
