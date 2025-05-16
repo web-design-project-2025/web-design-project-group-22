@@ -1,21 +1,35 @@
-#movie-details {
-  padding: 10px;
-  text-align: left;
-  display: flex;
-  gap: 20px;
+*{
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  box-sizing: border-box;
 }
 
-#movie-details h1 {
-  font-size: 2em;
-  margin-bottom: 20px;
+body {
+  max-width: 1200px;
+  overflow-x: hidden; 
+  background-color: black;
+  color: rgb(0, 0, 0);
+  box-sizing: border-box;
+}
+
+#title{
+  position: relative;
+  bottom: 25rem;
+  left: 5rem;
+  font-size: 2rem;
+  color: white;
+  font-weight: 800;
+  background: none;
+  text-align: left;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
 }
 
 #cover-image {
-  width: 100vw;
-  max-height: 500px;
+  margin-top: 1%;
+  width: 97vw;
+  max-height: 540px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 24px 24px rgba(141, 134, 88, 0.5);
   transition: transform 0.3s ease, opacity 0.3s ease;
   animation: fadeIn 1s ease-out;
 }
@@ -24,43 +38,78 @@
   background-color: none;
   color: #ffffff;
   border-radius: 50%;
-  width: 50px;
-  height: 50px;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
   background: none;
 }
 
 .rating {
-  position: fixed;
-  left: 20px;
+  position: absolute;
+  left: 1.5%;
   color: white;
   font-size: 1.1rem;
 }
+
 .star {
+  position: absolute;
   color: rgb(255, 213, 0);
   padding-left: 30px;
 }
 
 .share {
-  position: fixed;
-  top: 12%;
-  right: 5%;
+  position: absolute;
+  bottom: 15rem;
+  left: 12rem;
+  font-size: 2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  background: none;
+  text-align: left;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
 }
 
 .heart {
-  position: fixed;
-  color: red;
-  font-size: 1.5rem;
-  top: 10%;
-  right: 9%;
+  position: absolute;
+  bottom: 15rem;
+  left: 4.6rem;
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+  font-weight: 800;
+  background: none;
+  text-align: left;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
 }
 
 .play-button {
   position: absolute;
   bottom: 25px;
-  right: 10%;
+  right: 13%;
   background: #ffffff;
   color: #000000;
+  font-size: 12px;
+}
+
+.bell{
+  position: absolute;
+  bottom: 15rem;
+  left: 8.5rem;
+  font-size: 2rem;
+  color: rgb(224, 198, 0);
+  font-weight: 800;
+  background: none;
+  text-align: left;
+  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
+}
+
+.all {
+  position: absolute;
+  bottom: 30px;
+  right: 3rem;
+  background: none;
+  background-color: black;
+  color: #ffffff;
+  outline: 2px solid white;
 }
 
 @keyframes fadeIn {
@@ -76,20 +125,23 @@
 
 .details {
   position: absolute;
-  bottom: 20%;
+  bottom: 17%;
   padding: 16px 20px;
-  width: 95vw;
+  width: 97vw;
+  height: 13vw;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
   border-top: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  animation: fadeIn 1s ease-out;
 }
 
 #description {
-  top: 15%;
-  font-size: 1.1rem;
+  position: absolute;
+  top: 30%;
+  font-size: 1.2rem;
   align-items: start;
-  color: white;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
+  color: rgb(255, 255, 255);
 }
 
 #genres {
@@ -99,23 +151,28 @@
   align-items: start;
   color: white;
 }
+
 #duration {
+  position: absolute;
+  top: 67%;
   color: white;
   font-size: 1.3rem;
-}
-body {
-  background-color: black;
 }
 
 #casts {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 0.25rem;
-  padding: 0;
+  grid-template-columns: repeat(6,1fr);
   border: whitesmoke;
   list-style: none;
   padding-bottom: 7rem;
-  padding-top: 2rem;
+  margin-right: 2rem;
+}
+
+#comment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .comment-form {
@@ -125,7 +182,7 @@ body {
   border-radius: 1rem;
   padding: 0.5rem;
   margin-bottom: 2rem;
-  margin-left: 10rem;
+  margin-left: 15rem;
 }
 
 .comment-input {
@@ -151,6 +208,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  margin-left: 15rem;
 }
 
 .page-number {
@@ -252,4 +310,148 @@ footer {
 
 #footer-social a:hover {
   color: #cba792;
+}
+
+
+@media screen and (max-width: 768px) {
+  #movie-details {
+    flex-direction: column;
+  }
+  
+  #cover-image {
+    max-height: 400px;
+    width: 97%;
+  }
+  
+  .details {
+    width: 95vw;
+    bottom: 12rem;
+    height: 13rem;
+  }
+
+  #title{
+    bottom: 24rem;
+  }
+  
+  .share {
+    bottom: 15rem;
+  }
+  
+  .heart {
+    bottom: 15rem;
+    left: 5rem;
+  }
+
+  .play-button{
+    top: 9.5rem;
+    right: 12rem;
+  }
+
+  .bell {
+   bottom: 15rem;
+   }
+
+  #duration{
+   font-size: 1.2rem;
+  }
+
+  #description{
+    font-size: 1rem;
+  }
+
+  #casts {
+    grid-template-columns: repeat(3,1fr);
+  }
+  
+  .comment-form {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #movie-details {
+    flex-direction: column;
+  }
+  
+  #cover-image {
+    max-height: 600px;
+    width: 97vw;
+  }
+  
+  .details {
+    width: 97vw;
+    bottom: 20rem;
+    height: 9rem;
+  }
+
+  #title{
+    bottom: 16rem;
+    left: 3rem;
+    font-size: 1rem;
+  }
+  
+  .share {
+    bottom: 9.5rem;
+    font-size: 1.3rem;
+    left: 7.5rem;
+  }
+  
+  .heart {
+    bottom: 9.5rem;
+    left: 3.5rem;
+    font-size: 1.3rem;
+  }
+
+  .bell {
+   bottom: 9.5rem;
+   left: 5.5rem;
+   font-size: 1.3rem;
+   }
+
+   .icon-button{
+    width: 20px;
+    height: 20px;
+   }
+
+  .play-button{
+    top:6.5rem;
+    font-size: 0.4rem;
+    right: 8rem;
+  }
+
+  .all{
+    font-size: 0.4rem;
+    bottom: 1.5rem;
+  }
+
+  #genres{
+    font-size: 0.6rem;
+  }
+
+  #duration{
+   font-size: 0.6rem;
+  }
+
+  #description{
+    font-size: 0.7rem;
+  }
+
+  .rating{
+    font-size: 0.8rem;
+  }
+
+  .star{
+    font-size: 0.8rem;
+    top: 0.6rem;
+  }
+
+  #casts {
+    grid-template-columns: repeat(2,1fr);
+    width: 50%;
+    height: 50%;
+  }
+  
+  .comment-form {
+    width: 50%;
+  }
 }

@@ -10,7 +10,7 @@ const imageBaseUrl = "https://image.tmdb.org/t/p/w1280";
 const urlParams = new URLSearchParams(window.location.search);
 const movieId = urlParams.get("movie_id");
 const contentType = urlParams.get("type") || "movie";
-
+const titleElement = document.getElementById("title");
 const coverImageElement = document.getElementById("cover-image");
 const descriptionElement = document.getElementById("description");
 const genresElement = document.getElementById("genres");
@@ -28,6 +28,7 @@ async function loadContentDetails() {
     ? `${imageBaseUrl}${data.backdrop_path}`
     : "images/placeholder.jpg";
   coverImageElement.alt = data.title || data.name || "Unknown";
+  titleElement.textContent  = data.title || data.name || "Unknown";
   descriptionElement.textContent = data.overview || "No description available.";
   genresElement.textContent =
     data.genres?.map((g) => g.name).join(", ") || "Unknown";
@@ -145,7 +146,7 @@ function applyCommentDivStyles(commentDiv) {
   commentDiv.style.alignItems = "flex-start";
   commentDiv.style.padding = "0.75rem";
   commentDiv.style.marginBottom = "0.5rem";
-  commentDiv.style.marginLeft = "10rem";
+  commentDiv.style.marginLeft = "15rem";
   commentDiv.style.borderBottom = "1px solid #e0e0e0";
   commentDiv.style.backgroundColor = "white";
 }
@@ -162,7 +163,7 @@ function applyProfilePictureStyles(profilePicture) {
 function applyContenetContainerDivStyles(contentContainerDiv) {
   contentContainerDiv.style.flex = "1";
   contentContainerDiv.style.alignItems = "center";
-  contentContainerDiv.style.marginLeft = "0.75rem";
+  contentContainerDiv.style.marginLeft = "1rem";
 }
 // style function for usersname
 function applyUserNameDivStyles(userNameDiv) {
