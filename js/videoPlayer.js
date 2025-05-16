@@ -28,7 +28,7 @@ async function loadContentDetails() {
     ? `${imageBaseUrl}${data.backdrop_path}`
     : "images/placeholder.jpg";
   coverImageElement.alt = data.title || data.name || "Unknown";
-  titleElement.textContent  = data.title || data.name || "Unknown";
+  titleElement.textContent = data.title || data.name || "Unknown";
   descriptionElement.textContent = data.overview || "No description available.";
   genresElement.textContent =
     data.genres?.map((g) => g.name).join(", ") || "Unknown";
@@ -143,10 +143,11 @@ function applyCommentDivStyles(commentDiv) {
   commentDiv.style.width = "78%";
   commentDiv.style.borderRadius = "1rem";
   commentDiv.style.display = "flex";
-  commentDiv.style.alignItems = "flex-start";
+  commentDiv.style.alignItems = "center";
+  commentDiv.style.justifyContent = "center";
   commentDiv.style.padding = "0.75rem";
   commentDiv.style.marginBottom = "0.5rem";
-  commentDiv.style.marginLeft = "15rem";
+  commentDiv.style.marginLeft = "0";
   commentDiv.style.borderBottom = "1px solid #e0e0e0";
   commentDiv.style.backgroundColor = "white";
 }

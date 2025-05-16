@@ -1,18 +1,23 @@
-*{
+* {
   font-family: "Inter", -apple-system, BlinkMacSystemFont, sans-serif;
   box-sizing: border-box;
 }
 
 body {
-  max-width: 1200px;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   background-color: black;
   color: rgb(0, 0, 0);
   box-sizing: border-box;
 }
 
-#title{
-  position: relative;
+#movie-details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#title {
+  position: absolute;
   bottom: 25rem;
   left: 5rem;
   font-size: 2rem;
@@ -22,10 +27,15 @@ body {
   text-align: left;
   text-shadow: 0 0 10px rgb(0, 0, 0, 1);
 }
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 #cover-image {
   margin-top: 1%;
-  width: 97vw;
+  width: 130vw;
   max-height: 540px;
   object-fit: cover;
   border-radius: 15px;
@@ -90,7 +100,7 @@ body {
   font-size: 12px;
 }
 
-.bell{
+.bell {
   position: absolute;
   bottom: 15rem;
   left: 8.5rem;
@@ -151,7 +161,11 @@ body {
   align-items: start;
   color: white;
 }
-
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #duration {
   position: absolute;
   top: 67%;
@@ -160,29 +174,32 @@ body {
 }
 
 #casts {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(6,1fr);
-  border: whitesmoke;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 20px;
+  padding: 0;
   list-style: none;
-  padding-bottom: 7rem;
-  margin-right: 2rem;
 }
 
-#comment{
+#comments {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .comment-form {
-  width: 78.4%;
+  width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 0.5rem;
   margin-bottom: 2rem;
-  margin-left: 15rem;
+  margin: left 0;
 }
 
 .comment-input {
@@ -208,7 +225,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  margin-left: 15rem;
+  margin-left: 0;
 }
 
 .page-number {
@@ -312,90 +329,81 @@ footer {
   color: #cba792;
 }
 
-
 @media screen and (max-width: 768px) {
-  #movie-details {
-    flex-direction: column;
-  }
-  
   #cover-image {
     max-height: 400px;
     width: 97%;
   }
-  
+
   .details {
     width: 95vw;
     bottom: 12rem;
     height: 13rem;
   }
 
-  #title{
+  #title {
     bottom: 24rem;
   }
-  
+
   .share {
     bottom: 15rem;
   }
-  
+
   .heart {
     bottom: 15rem;
     left: 5rem;
   }
 
-  .play-button{
+  .play-button {
     top: 9.5rem;
     right: 12rem;
   }
 
   .bell {
-   bottom: 15rem;
-   }
-
-  #duration{
-   font-size: 1.2rem;
+    bottom: 15rem;
   }
 
-  #description{
+  #duration {
+    font-size: 1.2rem;
+  }
+
+  #description {
     font-size: 1rem;
   }
 
   #casts {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .comment-form {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 480px) {
-  #movie-details {
-    flex-direction: column;
-  }
-  
   #cover-image {
     max-height: 600px;
     width: 97vw;
   }
-  
+
   .details {
     width: 97vw;
     bottom: 20rem;
     height: 9rem;
   }
 
-  #title{
+  #title {
     bottom: 16rem;
     left: 3rem;
     font-size: 1rem;
   }
-  
+
   .share {
     bottom: 9.5rem;
     font-size: 1.3rem;
     left: 7.5rem;
   }
-  
+
   .heart {
     bottom: 9.5rem;
     left: 3.5rem;
@@ -403,54 +411,54 @@ footer {
   }
 
   .bell {
-   bottom: 9.5rem;
-   left: 5.5rem;
-   font-size: 1.3rem;
-   }
+    bottom: 9.5rem;
+    left: 5.5rem;
+    font-size: 1.3rem;
+  }
 
-   .icon-button{
+  .icon-button {
     width: 20px;
     height: 20px;
-   }
+  }
 
-  .play-button{
-    top:6.5rem;
+  .play-button {
+    top: 6.5rem;
     font-size: 0.4rem;
     right: 8rem;
   }
 
-  .all{
+  .all {
     font-size: 0.4rem;
     bottom: 1.5rem;
   }
 
-  #genres{
+  #genres {
     font-size: 0.6rem;
   }
 
-  #duration{
-   font-size: 0.6rem;
+  #duration {
+    font-size: 0.6rem;
   }
 
-  #description{
+  #description {
     font-size: 0.7rem;
   }
 
-  .rating{
+  .rating {
     font-size: 0.8rem;
   }
 
-  .star{
+  .star {
     font-size: 0.8rem;
     top: 0.6rem;
   }
 
   #casts {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     width: 50%;
     height: 50%;
   }
-  
+
   .comment-form {
     width: 50%;
   }
