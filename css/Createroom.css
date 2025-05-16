@@ -88,9 +88,10 @@ body {
   background-color: #444;
   color: #fff;
   text-decoration: none;
-  display: inline-block;
-}
 
+  display: block;
+  text-align: center;
+}
 .buttons .create {
   background-color: #9aa067;
   color: #fff;
@@ -247,6 +248,7 @@ footer {
     flex-direction: column;
     gap: 15px;
     margin-top: 25px;
+    align-items: stretch;
   }
 
   .buttons .cancel,
@@ -255,6 +257,8 @@ footer {
     max-width: 100%;
     margin: 0;
     padding: 12px 15px;
+    display: block;
+    box-sizing: border-box;
   }
 
   .select-movie {
