@@ -522,7 +522,7 @@ footer {
   }
 
   footer {
-    padding: 20px 10px;
+    display: none;
   }
 
   #logo-section figure {
