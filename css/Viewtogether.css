@@ -219,3 +219,100 @@ footer {
     padding: 0 15px;
   }
 }
+
+/* Responsive Design Rules */
+@media screen and (max-width: 1200px) {
+  .rooms {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .room {
+    width: calc(100% - 40px);
+    max-width: 600px;
+  }
+
+  .new-room {
+    width: calc(100% - 40px);
+    max-width: 600px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 400px;
+    padding: 30px 15px;
+  }
+
+  .hero-content {
+    width: calc(100% - 40px);
+    max-width: 500px;
+  }
+
+  .hero h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .hero p {
+    font-size: 14px;
+    margin: 8px 0;
+  }
+
+  .room {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .room-content {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .room-poster {
+    margin-left: 0;
+    width: 120px;
+    height: 176px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content {
+    padding: 15px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .rooms {
+    padding: 15px;
+    gap: 20px;
+  }
+
+  .room,
+  .new-room {
+    padding: 15px;
+  }
+
+  .room h2 {
+    font-size: 20px;
+  }
+
+  .room button,
+  .new-room button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .new-room {
+    height: 150px;
+  }
+
+  .new-room h2 {
+    font-size: 20px;
+  }
+}
