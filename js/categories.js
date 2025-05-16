@@ -27,7 +27,7 @@ let allMovies = [];
 // Load movies API
 async function loadMoviesData() {
   allMovies = [];
-  for (let page = 1; page <= 40; page++) {
+  for (let page = 1; page <= 20; page++) {
     const response = await fetch(
       `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=en-US&page=${page}`,
       { headers: { Authorization: `Bearer ${token}` } }
