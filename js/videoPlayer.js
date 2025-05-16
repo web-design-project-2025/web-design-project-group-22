@@ -146,7 +146,7 @@ function applyCommentDivStyles(commentDiv) {
   commentDiv.style.alignItems = "flex-start";
   commentDiv.style.padding = "0.75rem";
   commentDiv.style.marginBottom = "0.5rem";
-  commentDiv.style.marginLeft = "10rem";
+  commentDiv.style.marginLeft = "15rem";
   commentDiv.style.borderBottom = "1px solid #e0e0e0";
   commentDiv.style.backgroundColor = "white";
 }
@@ -163,7 +163,7 @@ function applyProfilePictureStyles(profilePicture) {
 function applyContenetContainerDivStyles(contentContainerDiv) {
   contentContainerDiv.style.flex = "1";
   contentContainerDiv.style.alignItems = "center";
-  contentContainerDiv.style.marginLeft = "0.75rem";
+  contentContainerDiv.style.marginLeft = "1rem";
 }
 // style function for usersname
 function applyUserNameDivStyles(userNameDiv) {

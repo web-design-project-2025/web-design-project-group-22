@@ -145,6 +145,13 @@ body {
   margin-right: 2rem;
 }
 
+#comment{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .comment-form {
   width: 78.4%;
   display: flex;
@@ -152,7 +159,7 @@ body {
   border-radius: 1rem;
   padding: 0.5rem;
   margin-bottom: 2rem;
-  margin-left: 10rem;
+  margin-left: 15rem;
 }
 
 .comment-input {
@@ -178,6 +185,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  margin-left: 15rem;
 }
 
 .page-number {
