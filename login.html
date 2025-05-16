@@ -4,28 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
+    <link rel="stylesheet" href="css/log.css" />
     <link rel="stylesheet" href="css/login.css" />
     <script src="js/login.js"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet"
     />
+    <script src="js/nav.js" defer></script>
   </head>
   <body>
     <header></header>
     <main>
+      <a href="/index.html" class="news-button">BACK</a>
       <div class="container">
         <div class="login-section">
           <div class="login-box">
             <h1>Welcome back, David</h1>
             <p>Welcome back! Please enter your details.</p>
-            <button class="google-login">
-              <img src="img/Google.png" alt="Google Icon" /> Log in with Google
-            </button>
+            <div class="social-login-buttons">
+              <button class="social-btn google-btn">
+                <img src="img/Google.png" alt="Google Icon" />
+              </button>
+              <button class="social-btn google-btn">
+                <img src="images/icons/Group 62.png" alt="Apple Icon" />
+              </button>
+              <button class="social-btn google-btn">
+                <img src="images/icons/Group 63.png" alt="Facebook Icon" />
+              </button>
+            </div>
             <div class="divider">
               <span></span>
               <p>or</p>
-              <span></span>
+              <span></span>aes
             </div>
             <form id="login-form" onsubmit="handleLogin(event)">
               <input type="email" id="email" placeholder="Email" required />
@@ -50,10 +61,7 @@
           </div>
         </div>
         <div class="image-section">
-          <img
-            src="login photo .jpg"
-            alt="Promotional Image"
-          />
+          <img src="login photo .jpg" alt="Promotional Image" />
         </div>
       </div>
     </main>

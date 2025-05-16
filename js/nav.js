@@ -47,8 +47,7 @@ if (isLoggedIn) {
     const viewTogetherLink = document.createElement("li");
     const viewTogetherLinkA = document.createElement("a");
     viewTogetherLinkA.href = "viewTogether.html";
-    viewTogetherLinkA.innerHTML =
-      '<i class="fas fa-users nav-icon"></i>';
+    viewTogetherLinkA.innerHTML = '<i class="fas fa-users nav-icon"></i>';
     viewTogetherLink.appendChild(viewTogetherLinkA);
     linksContainer.appendChild(viewTogetherLink);
   }
@@ -64,7 +63,7 @@ searchInput.placeholder = "search";
 searchContainer.appendChild(searchInput);
 searchInput.addEventListener("click", () => {
   window.location.href = "categories.html";
-})
+});
 desktopNav.appendChild(searchContainer);
 
 if (!isLoggedIn) {
@@ -97,39 +96,29 @@ if (!isLoggedIn) {
 const mobileNav = document.createElement("div");
 mobileNav.classList.add("mobile-nav");
 
-  // Categories
-  if (currentPage !== "categories.html") {
-    const categoryMobileLink = document.createElement("a");
-    categoryMobileLink.href = "categories.html";
-    categoryMobileLink.innerHTML =
-      '<i class="fas fa-th-large nav-icon"></i><span>Categories</span>';
-    mobileNav.appendChild(categoryMobileLink);
-  }
+// Categories
+if (currentPage !== "categories.html") {
+  const categoryMobileLink = document.createElement("a");
+  categoryMobileLink.href = "categories.html";
+  categoryMobileLink.innerHTML =
+    '<i class="fas fa-th-large nav-icon"></i><span>Categories</span>';
+  mobileNav.appendChild(categoryMobileLink);
+}
 
-  // View Together
-  if (currentPage !== "viewTogether.html") {
-    const viewTogetherMobileLink = document.createElement("a");
-    viewTogetherMobileLink.href = "viewTogether.html";
-    viewTogetherMobileLink.innerHTML =
-      '<i class="fas fa-users nav-icon"></i><span>View Together</span>';
-    mobileNav.appendChild(viewTogetherMobileLink);
-  }
-  // logo part for mobile nav  
-  const mobileLogo = document.createElement("a");
-  mobileLogo.href = "index.html";
-  mobileLogo.classList.add("mobile-logo-container");
-  const mobileLogoImg = document.createElement("img");
-  mobileLogoImg.src = "mobile-nav-logo.png";
-  mobileLogoImg.classList.add("mobile-logo");
-  mobileLogo.appendChild(mobileLogoImg);
-  mobileNav.appendChild(mobileLogo);
+// View Together
+if (currentPage !== "viewTogether.html") {
+  const viewTogetherMobileLink = document.createElement("a");
+  viewTogetherMobileLink.href = "viewTogether.html";
+  viewTogetherMobileLink.innerHTML =
+    '<i class="fas fa-users nav-icon"></i><span>View Together</span>';
+  mobileNav.appendChild(viewTogetherMobileLink);
+}
 
-  //AI icon
-  const aiMobileLink = document.createElement("a");
-  aiMobileLink.href = "#";
-  aiMobileLink.innerHTML =
-    '<i class="fas fa-robot nav-icon"></i><span>AI</span>';
-  mobileNav.appendChild(aiMobileLink);
+//AI icon
+const aiMobileLink = document.createElement("a");
+aiMobileLink.href = "#";
+aiMobileLink.innerHTML = '<i class="fas fa-robot nav-icon"></i><span>AI</span>';
+mobileNav.appendChild(aiMobileLink);
 
 //Logo mobile version
 if (currentPage !== "index.html") {
