@@ -14,7 +14,7 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 60px 20px 20px 20px;
+  padding: 80px 20px 20px 20px;
 }
 
 header {
@@ -376,8 +376,7 @@ footer {
 .news-button {
   position: fixed;
   right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 600px;
   background-color: #9aa067;
   color: #ffffff;
   text-decoration: none;
