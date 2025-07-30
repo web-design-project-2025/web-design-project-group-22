@@ -43,10 +43,10 @@ if (isLoggedIn) {
   }
 
   // View Together link
-  if (currentPage !== "viewTogether.html") {
+  if (currentPage !== "Viewtogether.html") {
     const viewTogetherLink = document.createElement("li");
     const viewTogetherLinkA = document.createElement("a");
-    viewTogetherLinkA.href = "viewTogether.html";
+    viewTogetherLinkA.href = "Viewtogether.html";
     viewTogetherLinkA.innerHTML = '<i class="fas fa-users nav-icon"></i>';
     viewTogetherLink.appendChild(viewTogetherLinkA);
     linksContainer.appendChild(viewTogetherLink);
@@ -106,9 +106,9 @@ if (currentPage !== "categories.html") {
 }
 
 // View Together
-if (currentPage !== "viewTogether.html") {
+if (currentPage !== "Viewtogether.html") {
   const viewTogetherMobileLink = document.createElement("a");
-  viewTogetherMobileLink.href = "viewTogether.html";
+  viewTogetherMobileLink.href = "Viewtogether.html";
   viewTogetherMobileLink.innerHTML =
     '<i class="fas fa-users nav-icon"></i><span>View Together</span>';
   mobileNav.appendChild(viewTogetherMobileLink);
