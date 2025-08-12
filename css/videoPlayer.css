@@ -12,8 +12,10 @@ body {
 
 #movie-details {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 #title {
@@ -31,12 +33,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  width: 100%;
 }
 
 #cover-image {
   margin-top: 1%;
-  width: 130vw;
-  max-height: 540px;
+  width: 100%;
   object-fit: cover;
   border-radius: 15px;
   box-shadow: 0 24px 24px rgba(141, 134, 88, 0.5);
@@ -135,9 +138,12 @@ body {
 
 .details {
   position: absolute;
-  bottom: 17%;
-  padding: 16px 20px;
-  width: 97vw;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  width: 100%;
+  min-height: 150px;
   height: 13vw;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
@@ -147,37 +153,58 @@ body {
 }
 
 #description {
-  position: absolute;
-  top: 30%;
+  position: relative;
+  top: auto;
+  margin-top: 40px;
   font-size: 1.2rem;
-  align-items: start;
   color: rgb(255, 255, 255);
 }
 
 #genres {
-  position: absolute;
-  top: 15%;
+  position: relative;
+  top: auto;
+  margin-bottom: 10px;
   font-size: 1.1rem;
   align-items: start;
   color: white;
 }
+
 .profile-pic {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+.profile-pic img {
+  width: 100%;
+  max-width: 90%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  box-sizing: border-box;
+}
+
 #duration {
-  position: absolute;
-  top: 67%;
+  position: relative;
+  top: auto;
   color: white;
   font-size: 1.3rem;
+  margin-top: 15px;
 }
 
 #casts {
   width: 100%;
+  max-width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  overflow: hidden;
   padding: 0;
   list-style: none;
 }
@@ -198,6 +225,7 @@ body {
   background-color: #ffffff;
   border-radius: 1rem;
   padding: 0.5rem;
+  margin-top: 4rem;
   margin-bottom: 2rem;
   margin: left 0;
 }
@@ -336,9 +364,8 @@ footer {
   }
 
   .details {
-    width: 95vw;
-    bottom: 12rem;
-    height: 13rem;
+    min-height: 130px;
+    padding: 15px;
   }
 
   #title {
@@ -369,12 +396,17 @@ footer {
 
   #description {
     font-size: 1rem;
+    margin-top: 30px;
   }
 
   #casts {
     grid-template-columns: repeat(3, 1fr);
+    padding: 15px;
+    gap: 8px;
   }
-
+  .profile-pic img {
+    max-width: 60%;
+  }
   .comment-form {
     width: 50%;
   }
@@ -387,9 +419,8 @@ footer {
   }
 
   .details {
-    width: 97vw;
-    bottom: 20rem;
-    height: 9rem;
+    min-height: 120px;
+    padding: 12px;
   }
 
   #title {
@@ -442,6 +473,7 @@ footer {
 
   #description {
     font-size: 0.7rem;
+    margin-top: 25px;
   }
 
   .rating {
@@ -455,8 +487,12 @@ footer {
 
   #casts {
     grid-template-columns: repeat(2, 1fr);
-    width: 50%;
-    height: 50%;
+    padding: 10px;
+    gap: 5px;
+  }
+
+  .profile-pic img {
+    max-width: 50px;
   }
 
   .comment-form {
