@@ -10,6 +10,43 @@ body {
   box-sizing: border-box;
 }
 
+#nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  list-style-type: none;
+  padding: 0 0 0 0;
+
+  margin: 0 0 0;
+  overflow: none;
+}
+.mobile-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.mobile-nav ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0.5rem 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-nav li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+}
+
 #movie-details {
   display: flex;
   flex-direction: column;
@@ -20,8 +57,9 @@ body {
 
 #title {
   position: absolute;
-  bottom: 25rem;
-  left: 5rem;
+  bottom: 160px;
+  left: 20px;
+  right: 20px;
   font-size: 2rem;
   color: white;
   font-weight: 800;
@@ -57,68 +95,55 @@ body {
   background: none;
 }
 
-.rating {
+.icon-bar {
   position: absolute;
+  bottom: 250px;
+  left: 20px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  z-index: 11;
+}
+
+.rating {
   left: 1.5%;
   color: white;
   font-size: 1.1rem;
 }
 
-.star {
-  position: absolute;
-  color: rgb(255, 213, 0);
-  padding-left: 30px;
-}
-
-.share {
-  position: absolute;
-  bottom: 15rem;
-  left: 12rem;
-  font-size: 2rem;
-  color: rgb(255, 255, 255);
-  font-weight: 800;
-  background: none;
-  text-align: left;
-  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
-}
-
-.heart {
-  position: absolute;
-  bottom: 15rem;
-  left: 4.6rem;
-  font-size: 2rem;
-  color: rgb(255, 0, 0);
-  font-weight: 800;
-  background: none;
-  text-align: left;
-  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
-}
-
 .play-button {
+  display: flex;
+  align-items: end;
   position: absolute;
   bottom: 25px;
-  right: 13%;
+  left: 40rem;
   background: #ffffff;
   color: #000000;
   font-size: 12px;
 }
 
-.bell {
-  position: absolute;
-  bottom: 15rem;
-  left: 8.5rem;
-  font-size: 2rem;
-  color: rgb(224, 198, 0);
-  font-weight: 800;
-  background: none;
-  text-align: left;
-  text-shadow: 0 0 10px rgb(0, 0, 0, 1);
+.icon-button.heart {
+  color: rgb(255, 0, 0);
 }
 
+.icon-button.bell {
+  color: rgb(224, 198, 0);
+}
+
+.icon-button.share {
+  color: rgb(255, 255, 255);
+}
+
+.icon-button.star {
+  color: rgb(255, 213, 0);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .all {
-  position: absolute;
+  position: relative;
   bottom: 30px;
-  right: 3rem;
+  left: 9rem;
   background: none;
   background-color: black;
   color: #ffffff;
@@ -369,25 +394,16 @@ footer {
   }
 
   #title {
-    bottom: 24rem;
+    bottom: 140px;
   }
-
-  .share {
-    bottom: 15rem;
-  }
-
-  .heart {
-    bottom: 15rem;
-    left: 5rem;
+  .icon-bar {
+    bottom: 180px;
+    gap: 12px;
   }
 
   .play-button {
     top: 9.5rem;
     right: 12rem;
-  }
-
-  .bell {
-    bottom: 15rem;
   }
 
   #duration {
@@ -410,6 +426,18 @@ footer {
   .comment-form {
     width: 50%;
   }
+
+  .all {
+    padding: 8px 12px;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+  .play-button,
+  .all {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -429,22 +457,10 @@ footer {
     font-size: 1rem;
   }
 
-  .share {
-    bottom: 9.5rem;
-    font-size: 1.3rem;
-    left: 7.5rem;
-  }
-
-  .heart {
-    bottom: 9.5rem;
-    left: 3.5rem;
-    font-size: 1.3rem;
-  }
-
-  .bell {
-    bottom: 9.5rem;
-    left: 5.5rem;
-    font-size: 1.3rem;
+  .icon-bar {
+    bottom: 160px;
+    left: 15px;
+    gap: 10px;
   }
 
   .icon-button {
@@ -459,8 +475,9 @@ footer {
   }
 
   .all {
-    font-size: 0.4rem;
-    bottom: 1.5rem;
+    padding: 6px 10px;
+    bottom: 15px;
+    right: 15px;
   }
 
   #genres {
@@ -497,5 +514,14 @@ footer {
 
   .comment-form {
     width: 50%;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+  .play-button,
+  .all {
+    display: none;
   }
 }
