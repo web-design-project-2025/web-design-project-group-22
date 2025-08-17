@@ -7,9 +7,9 @@ const token =
   "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI3YzRjY2YzZDJhNzJhZGIwOWZmODUyZGRjNGFhOGE3NiIsIm5iZiI6MTc0NDcyMzUxOS4yMzEsInN1YiI6IjY3ZmU1ZTNmYzFlMGE3MDhjYmFkNjRiZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.B5lfXnQkC-jXEtPpjbpJLNo5FRm5YzpST9-rJnID008";
 const imageBaseUrl = "https://image.tmdb.org/t/p/w1280";
 
-const urlParams = new URLSearchParams(window.location.search);
-const movieId = urlParams.get("movie_id");
-const contentType = urlParams.get("type") || "movie";
+const playerUrlParams = new URLSearchParams(window.location.search);
+const movieId = playerUrlParams.get("movie_id");
+const contentType = playerUrlParams.get("type") || "movie";
 const titleElement = document.getElementById("title");
 const coverImageElement = document.getElementById("cover-image");
 const descriptionElement = document.getElementById("description");
